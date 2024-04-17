@@ -7,11 +7,11 @@ module.exports = {
   ],
   theme: {
     colors: {
-      orange: '#F05939',
-      black: '#000',
-      white: '#fff',
+      'orange': '#F05939',
+      'black': '#000',
+      'white': '#fff',
     },
-    //extend: {
+    
       fontFamily : {
         sans: [
           'Arimo',
@@ -34,9 +34,15 @@ module.exports = {
           '"Courier New"',
           'monospace',
         ],
-        //'arimo' : ['Arimo', 'sans-serif']
-      }//,
-   // }
+        
+      },
+   extend: {
+    screens: {
+      xs : {'max': '314px'}
+    }
+
+   //'arimo' : ['Arimo', 'sans-serif'],
+   }
   },
   plugins: [],
 }
