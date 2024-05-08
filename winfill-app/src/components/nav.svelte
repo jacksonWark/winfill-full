@@ -8,7 +8,7 @@
 </script>
 
 <!-- NAVIGATION -->
-<nav class="flex flex-col">
+<nav class="flex flex-col mb-6">
     <div class="flex flex-nowrap flex-col border-1 border-b relative md:flex-row">
         <a class="block" href="/">
             <img class="w-44 xs:w-36 md:h-14 md:w-min max-w-none" src="./images/Winfill_Logo-Top.png" alt="Winfill Developments">  
@@ -28,7 +28,7 @@
                 <div class="flex flex-col-reverse">
                     <div id="projects" class="size-auto relative group/projects translate-y-1.5">
                         <a class={(route == "projects" ? currStyle : defStyle) + " relative"} href="/projects">Projects</a>
-                        <div class="absolute text-left w-40 pl-2.5 top-full origin-top opacity-0 hidden flex-col group-hover/projects:flex group-hover/projects:opacity-100 translate-y-1 ">
+                        <div class="absolute bg-white text-left w-40 pl-2.5 top-full origin-top opacity-0 hidden flex-col group-hover/projects:flex group-hover/projects:opacity-100 translate-y-1 ">
                             <a class="w-full font-bold hover:text-orange" href="/projects#">Homes</a>
                             <a class="w-full font-bold hover:text-orange" href="/projects#">Multi-Family</a>
                             <a class="w-full font-bold hover:text-orange" href="/projects#">Small Projects</a>

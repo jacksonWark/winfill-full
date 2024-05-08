@@ -1,6 +1,7 @@
 <script>
     import "../app.css"
     import Nav from '../components/nav.svelte';
+    import Footer from '../components/footer.svelte';
 </script>
 
 <svelte:head>
@@ -12,4 +13,10 @@
 
 <Nav />
 
-<slot />
+<div class="grid grid-cols-1 gap-y-16 md:grid-cols-10 md:gap-x-6 overflow-hidden">
+    <slot />    
+</div>
+
+<Footer />
+
+
