@@ -34,7 +34,7 @@
                 <div class="flex flex-col-reverse">
                     <div id="projects" class="size-auto relative group/projects translate-y-1.5">
                         <a class={(route == "projects" ? currStyle : defStyle) + " relative"} href="/projects">Projects</a>
-                        <div class=" bg-white  w-40 top-full origin-top opacity-0 hidden flex-col group-hover/projects:flex group-hover/projects:opacity-100 border-t border-b md:b-none md:pl-2.5 md:translate-y-1 md:absolute md:text-left">
+                        <div class=" bg-white w-40 top-full origin-top opacity-0 hidden flex-col group-hover/projects:flex group-hover/projects:opacity-100 border-y md:border-none md:pl-2.5 md:translate-y-1 md:absolute md:text-left">
                             <a class="w-full font-bold hover:text-orange" href="/projects#">Homes</a>
                             <a class="w-full font-bold hover:text-orange" href="/projects#">Multi-Family</a>
                             <a class="w-full font-bold hover:text-orange" href="/projects#">Small Projects</a>
