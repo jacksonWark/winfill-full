@@ -3,15 +3,13 @@
     import PJ from '../components/pj.svelte';
 </script>
 
-<div class="col-span-3">
-    <PJ>
-        So I started to walk into the water. I won't lie to you boys, I was terrified. 
-        But I pressed on, and as I made my way past the breakers a strange calm came over me. 
-        I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.
-    </PJ>
+<div class="col-span-1 md:col-span-5 xl:col-span-7 md:row-span-2">
+    <img src='./images/landing-box-house.webp' alt="Box House">
 </div>
-<div class="bg-orange col-span-2">
+<div class="col-span-1 md:col-span-4 md:col-start-7 xl:col-span-2 xl:col-start-9">
     <PJ>
-        I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.
+        <b>About:</b> Established in 2020 by two brothers, an Engineer, and an Industrial designer, Winfill Developments focuses on residential infill design,
+        construction, and development. We take pride in building unique structures while maintaining a high standard of construction quality in established
+        neighborhoods. Our in-house design team allows us to take a streamlined approach to the design process. Our tailored processes unify the client/designer/builder team.
     </PJ>
 </div>
