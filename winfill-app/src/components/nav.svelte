@@ -35,10 +35,10 @@
                     <div id="projects" class="size-auto relative group/projects translate-y-1.5">
                         <a class={(route == "projects" ? currStyle : defStyle) + " relative"} href="/projects">Projects</a>
                         <div class=" bg-white w-40 top-full origin-top opacity-0 hidden flex-col group-hover/projects:flex group-hover/projects:opacity-100 border-y md:border-none md:pl-2.5 md:translate-y-1 md:absolute md:text-left">
-                            <a class="w-full font-bold hover:text-orange" href="/projects#">Homes</a>
-                            <a class="w-full font-bold hover:text-orange" href="/projects#">Multi-Family</a>
-                            <a class="w-full font-bold hover:text-orange" href="/projects#">Small Projects</a>
-                            <a class="w-full font-bold hover:text-orange" href="/projects#">For Sale</a>
+                            <a class="w-full font-bold hover:text-orange" href="/projects#homes">Homes</a>
+                            <a class="w-full font-bold hover:text-orange" href="/projects#multi-family">Multi-Family</a>
+                            <a class="w-full font-bold hover:text-orange" href="/projects#small-projects">Small Projects</a>
+                            <a class="w-full font-bold hover:text-orange" href="/projects#for-sale">For Sale</a>
                         </div>
                     </div>
                 </div>
