@@ -1,4 +1,9 @@
 <script lang="ts">
+    
+    let topLogo = "/images/Winfill_Logo-Top.png";
+    let bottomLogo = "/images/Winfill_Logo-Bot.png";
+
+
     //type Route = 'dashboard' | 'team' | 'projects' | 'calendar';
     import { page } from '$app/stores';
     $: route = $page.url.pathname.split('/').filter(Boolean).pop() || '/';
@@ -17,7 +22,7 @@
 <nav class="flex flex-col mb-6">
     <div class="flex flex-nowrap flex-col border-1 border-b relative md:flex-row">
         <a class="block" href="/">
-            <img class="w-44 xs:w-36 md:h-14 md:w-min max-w-none" src="./images/Winfill_Logo-Top.png" alt="Winfill Developments">  
+            <img class="w-44 xs:w-36 md:h-14 md:w-min max-w-none" src={topLogo} alt="Winfill Developments">  
         </a>
         <label for="menu-toggle" class="cursor-pointer absolute right-0 top-0 md:hidden block">
             <svg class="fill-current text-black-900" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 20 20">
@@ -62,5 +67,5 @@
             </div>
         </div>
     </div>
-    <img class="h-6 w-min md:h-8" src="./images/Winfill_Logo-Bot.png" alt="Winfill Developments">
+    <img class="h-6 w-min md:h-8" src={bottomLogo} alt="Winfill Developments">
 </nav>

@@ -1,87 +1,65 @@
 <script>
-    import PJ from '../../components/pj.svelte';
+    import ProjectTile from '../../components/project-tile.svelte';
+    import ProjectCategory from '../../components/project-category.svelte';
+
+    
+
+    let imagePath = "./images/projects/";
+
+    let data = [
+            {
+                name: "Homes",
+                id: "homes",
+                text: "Crafting distinctive homes that bring your vision to life, we're not just building houses &mdash; we're creating the backdrop for a lifetime of memories.",
+                imageSize: 3,
+                images: [
+                    { source: "BoxHouse.webp", route: "/projects/box-house", alt: "Box House"},
+                    { source: "PointyHouse.webp", route: "/projects/pointy-house", alt: "Pointy House"},
+                    { source: "Husky.webp", route: "/projects/husky", alt: "Husky"},
+                    { source: "Goliath.webp", route: "/projects/goliath", alt: "Goliath"},
+                    { source: "AAA.webp", route: "/projects/aaa", alt: "AAA"},
+                    { source: "Wedge.webp", route: "/projects/wedge", alt: "Wedge"},
+                    { source: "RiverdaleResidence.webp", route: "/projects/riverdale-residence", alt: "Riverdale Residence"}
+                ]
+            },
+            {
+                name: "Multi-Family",
+                id: "multi-family",
+                text: "Building Multi-Family developments where every detail is designed and built with the tenant and owner in mind, we create spaces that foster connections and turn neighbors into lifelong friends.",
+                imageSize: 3,
+                images: [
+                    { source: "Trplex.webp", route: "/projects/trplex", alt: "Trplex"}
+                ]
+            },
+            {
+                name: "Small Projects",
+                id: "small-projects",
+                text: "Small-scale projects that matter, we bring your ideas to life from playhouses to custom furniture. All are designed and built in-house with a personal touch, crafted to your exact needs.",
+                imageSize: 2,
+                images: [
+                    { source: "PlayHouse.webp", route: "/projects/lets-play", alt: "Play House"},
+                    { source: "Concrete.webp", route: "/projects/concrete", alt: "Concrete"},
+                    { source: "Furniture.webp", route: "/projects/furniture", alt: "Furniture"},
+                ]
+            },
+            {
+                name: "For Sale",
+                id: "for-sale",
+                text: "Looking for a move-in ready home or plot for your dream home? We may be able to help.",
+                imageSize: 3,
+                images: [
+                    { source: "Allendale.webp", route: "/projects/allendale", alt: "Allendale"},
+                    { source: "Strathearn.webp", route: "/projects/strathearn", alt: "Strathearn"},
+                ]
+            },
+        ];
 </script>
 
-<!-- Homes -->
-<div id="homes" class="col-span-1 md:col-span-2 md:row-span-2">
-    <h2 class="text-xl mb-4">Homes</h2>
-    <PJ>
-        Crafting distinctive homes that bring your vision to life, we're not just building houses &mdash we're creating the backdrop for a lifetime of memories.
-    </PJ>
-</div>
-<!-- Box House -->
-<div class="col-span-1 md:col-span-3 md:col-start-4">
-    <img src='./images/projects/BoxHouse.webp' alt="Box House">
-</div>
-<!-- Pointy House -->
-<div class="col-span-1 md:col-span-3 md:col-start-7">
-    <img src='./images/projects/PointyHouse.webp' alt="Pointy House">
-</div>
-<!-- Husky -->
-<div class="col-span-1 md:col-span-3 md:col-start-4">
-    <img src='./images/projects/Husky.webp' alt="Husky">
-</div>
-<!-- Goliath -->
-<div class="col-span-1 md:col-span-3 md:col-start-7">
-    <img src='./images/projects/Goliath.webp' alt="Goliath">
-</div>
-<!-- AAA -->
-<div class="col-span-1 md:col-span-3 md:col-start-4">
-    <img src='./images/projects/AAA.webp' alt="AAA">
-</div>
-<!-- Wedge -->
-<div class="col-span-1 md:col-span-3 md:col-start-7">
-    <img src='./images/projects/Wedge.webp' alt="Wedge">
-</div>
-<!-- Riverdale Residence -->
-<div class="col-span-1 md:col-span-3 md:col-start-4">
-    <img src='./images/projects/RiverdaleResidence.webp' alt="Riverdale Residence">
-</div>
 
-<!-- Multi-Family -->
-<div id="multi-family" class="col-span-1 md:col-span-2 md:col-start-1 md:row-span-2">
-    <h2 class="text-xl mb-4">Multi-Family</h2>
-    <PJ>
-        Building Multi-Family developments where every detail is designed and built with the tenant and owner in mind, we create spaces that foster connections and turn neighbors into lifelong friends.
-    </PJ>
-</div>
-<!-- Trplex -->
-<div class="col-span-1 md:col-span-3 md:col-start-4">
-    <img src='./images/projects/Trplex.webp' alt="Trplex">
-</div>
 
-<!-- Small Projects -->
-<div id="small-projects" class="col-span-1 md:col-span-2 md:col-start-1 md:row-span-2">
-    <h2 class="text-xl mb-4">Small Projects</h2>
-    <PJ>
-        Small-scale projects that matter, we bring your ideas to life from playhouses to custom furniture. All are designed and built in-house with a personal touch, crafted to your exact needs.
-    </PJ>
-</div>
-<!-- Play House -->
-<div class="col-span-1 md:col-span-2 md:col-start-4">
-    <img src='./images/projects/PlayHouse.webp' alt="Play House">
-</div>
-<!-- Concrete -->
-<div class="col-span-1 md:col-span-2 md:col-start-6">
-    <img src='./images/projects/Concrete.webp' alt="Concrete">
-</div>
-<!-- Furniture -->
-<div class="col-span-1 md:col-span-2 md:col-start-8">
-    <img src='./images/projects/Furniture.webp' alt="Furniture">
-</div>
-
-<!-- For Sale -->
-<div id="for-sale" class="col-span-1 md:col-span-2 md:col-start-1 md:row-span-2">
-    <h2 class="text-xl mb-4">For Sale</h2>
-    <PJ>
-        Looking for a move-in ready home or plot for your dream home? We may be able to help.
-    </PJ>
-</div>
-<!-- Allendale -->
-<div class="col-span-1 md:col-span-3 md:col-start-4">
-    <img src='./images/projects/Allendale.webp' alt="Allendale">
-</div>
-<!-- Strathearn -->
-<div class="col-span-1 md:col-span-3 md:col-start-7">
-    <img src='./images/projects/Strathearn.webp' alt="Strathearn">
-</div>
+{#each data as section}
+    <ProjectCategory name={section.name} id={section.id} text={section.text} images={section.images.length} imageSize={section.imageSize}/>
+    {#each section.images as image, i}
+        <ProjectTile alt={image.alt} source={imagePath+image.source} route={image.route} size={section.imageSize} index={i} />
+    {/each}
+{/each}

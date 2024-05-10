@@ -13,7 +13,7 @@
 
 <Nav />
 
-<div class="grid grid-cols-1 gap-y-8 md:grid-cols-10 md:gap-x-6 overflow-hidden">
+<div class="grid grid-cols-1 gap-y-6 overflow-hidden mb-6 mt-12 md:grid-cols-10 md:gap-x-6">
     <slot />    
 </div>
 
