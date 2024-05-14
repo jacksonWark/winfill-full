@@ -1,6 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
+  safelist: [
+    {
+      pattern: /col-span-.+/,
+      variants: ['md']
+    },
+    {
+      pattern: /col-start-.+/,
+      variants: ['md']
+    }
+
+  ],
   theme: {
     colors: {
       'orange': '#F05939',
