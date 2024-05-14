@@ -3,11 +3,13 @@
 
     let pointyHouse = {
         name: "Pointy House",
+        category: "Homes",
         location: "Riverdale, Edmonton, AB",
         started: 2023,
         status: "Under Construction",
         designer: "Kurtis Wiun",
-        imageFolder: "/images/projects/homes/pointy-house/",
+        inHouse: true,
+        route: "homes/pointy-house/",
         conceptImage: "scan.webp",
         text: [
             "Description: The neighboring home of the Box House, this custom 2350 s.f. 2-Storey infill home features a unique minimal gable design. 10044 features 3 bedrooms, 2.5 bathrooms, and an office workspace. The main entertaining level takes advantage of open concept design, creating a flowing space from semi-private office, to living, to dining, to the kitchen, while interior design decisions provide clear breaks in space usage. Finishes on the main floor include engineered flooring, 10\’ ceilings, and a gas fireplace. The galley kitchen features a quartz island, upgraded KitchenAid appliances, a gas range, bar seating, and a large pantry with custom shelving and a barn door. The kitchen opens onto the back deck for easy outdoor cooking and a view of the oversized backyard. The staircase features floor-to-ceiling glass wall keeping the main floor open, and engineered hardwood waterfall risers complete with custom nosing.",

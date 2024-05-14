@@ -3,11 +3,13 @@
 
     let wedge = {
         name: "Wedge",
+        category: "Homes",
         location: "Beverly, Calgary, AB",
         started: 2023,
         status: "Under Construction",
         designer: "Kurtis Wiun",
-        imageFolder: "/images/projects/homes/wedge/",
+        inHouse: true,
+        route: "homes/wedge/",
         conceptImage: "scan.webp",
         text: [
             "Description: Currently under construction, this Four Seasons Room will be situated on a beautiful Midcentury home in the Belaire neighborhood. Large setbacks enforced by the restricted covenant led us to follow the property line on an angled addition to maximize space. The Four Seasons room will contain a swim spa wood-burning fireplace and exercise equipment allowing the owners to enjoy their favorite activities close to home in their forever home.",

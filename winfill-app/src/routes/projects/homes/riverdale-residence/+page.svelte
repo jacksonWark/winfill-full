@@ -3,11 +3,13 @@
 
     let riverdaleResidence = {
         name: "Riverdale Residence",
+        category: "Homes",
         location: "Gold Bar, Edmonton, AB",
         started: 2020,
         status: "Completed",
         designer: "Brenden Wiun & Kurtis Wiun",
-        imageFolder: "/images/projects/homes/riverdale-residence/",
+        inHouse: true,
+        route: "homes/riverdale-residence/",
         conceptImage: "scan.webp",
         text: [
             "Description: "   

@@ -4,11 +4,13 @@
 
     let boxHouse = {
         name: "Box House",
+        category: "Homes",
         location: "Riverdale, Edmonton, AB",
         started: 2020,
         status: "Completed",
         designer: "Kurtis Wiun",
-        imageFolder: "/images/projects/homes/box-house/",
+        inHouse: true,
+        route: "homes/box-house/",
         conceptImage: "scan.webp",
         text: [
             "Description: This versatile 2400 s.f. home features 3 Bedrooms and 2.5 Baths designed around a unique mid-home courtyard. On the main floor, the courtyard brings abundant natural light to the chefs inspired kitchen and the formal dining room while providing a secluded outdoor cooking, living, and dining space off the kitchen. Finishes on the main floor include engineered hardwood flooring, 10’ ceilings, and a gas fireplace. The kitchen features quartz countertops, an oversized island, upgraded KitchenAid appliances, a gas range, and a built-in breakfast nook for informal dining. At the back of the home, you will find a formal dining room, an office overlooking a treed backyard, a half bath, and a generous mudroom with multiple storage closets.",

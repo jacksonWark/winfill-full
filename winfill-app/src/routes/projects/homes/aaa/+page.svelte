@@ -4,11 +4,13 @@
 
     let aaa = {
         name: "AAA",
+        category: "Homes",
         location: "Alberta Ave, Edmonton, AB",
         started: 2024,
         status: "Under Construction",
         designer: "Kurtis Wiun",
-        imageFolder: "/images/projects/homes/aaa/",
+        inHouse: true,
+        route: "homes/aaa/",
         conceptImage: "scan.webp",
         text: [
             "Description: Currently in permitting, this rear addition will be situated on a beautiful 110-year-old home in the Alberta Ave neighborhood. Winfill will replace an existing addition while bringing the design more in line with the traditional style of the home and improving the exterior envelope to allow the clients to enjoy their home for years to come.",

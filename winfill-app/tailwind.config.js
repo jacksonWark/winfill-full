@@ -9,6 +9,10 @@ module.exports = {
     {
       pattern: /col-start-.+/,
       variants: ['md']
+    },
+    {
+      pattern: /row-span-.+/,
+      variants: ['md']
     }
 
   ],
