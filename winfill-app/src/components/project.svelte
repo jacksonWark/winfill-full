@@ -27,10 +27,10 @@
 
 
 <div class="md:order-1 md:col-span-6 text-xl md:text-2xl">
-    <p class='text-orange inline mr-2'>Projects:</p><p class="inline"> > {project.category} > </p><p class="inline">{project.name}</p> 
+    <p class='text-orange inline mr-2'>Projects:</p><p class="hidden lg:inline"> > {project.category} > </p><p class="inline">{project.name}</p> 
 </div>
 
-<div class="hidden justify-self-end text-md md:order-2 md:flex md:col-span-4 md:flex-row md:text-2xl">
+<div class="hidden justify-self-end md:order-2 md:flex md:flex-row md:col-span-4 md:text-md lg:col-span-4 lg:text-2xl">
     <p class='mr-1 '>Follow The Builds:</p>
     <a href="https://www.instagram.com/winfill_developments/" target="_blank" rel="noopener noreferrer" class="underline decoration-orange hover:text-orange text-right">Instagram</a> 
 </div>
@@ -42,11 +42,11 @@
 </div>
 
 {#if project.conceptImage}
-<div class="md:order-5 md:col-start-9 md:col-span-2">
+<div class="md:order-5 md:col-start-7 md:col-span-4 lg:col-start-9 lg:col-span-2">
     <img src={imageFolder+project.conceptImage} alt={project.name}>
 </div>
 
-<div class="md:order-4 md:columns-2 md:col-span-8">
+<div class="md:order-4 lg:columns-2 md:col-span-6 lg:col-span-8">
     {#each project.text as paragraph}
         <Paragraph extraStyles={" mb-4"}>
             {paragraph}

@@ -17,7 +17,7 @@
 <div class={style}>
     <a href={route} class="block relative" on:mouseenter={()=>{active = true}} on:mouseleave={()=>{active = false}}>
         <img src={source} alt={alt}>
-        <div class={(active == true ? "flex" : "hidden") + " absolute size-full top-0 items-center transition backdrop-brightness-50"}>
+        <div class={(active == true ? "md:flex" : "md:hidden") + " absolute bottom-0 w-full h-8 md:size-full md:top-0 items-center transition backdrop-brightness-50"}>
             <h1 class="text-orange font-bold text-xl text-center w-full">{alt}</h1>
         </div>
     </a>
