@@ -14,7 +14,11 @@
         text: [
             "Description: "   
         ],
-        video: "/video/video-screenshot.webp",
+        video: {
+            id: "SLBspkzG9s8",
+            altThumb: "/video/video-screenshot.webp",
+            animations: true
+        },
         images: [
             "1.webp",
             "2.webp",

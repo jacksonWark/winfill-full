@@ -1,28 +1,12 @@
 <script lang="ts">
     import Paragraph from "./paragraph.svelte";
-    import { page } from "$app/stores";
-    //Props
-    export let project: {
-        name: string;
-        category: string;
-        location: string;
-        started: number; 
-        status: string;
-        designer: string;
-        inHouse: boolean;
-        route: string;
-        conceptImage: string;
-        text: string[];
-        video: string,
-        images: string[]
-    }
-
-    //let n = $page.url.pathname.split('/').length;
-    //let prefix = "";
-    //for (let i = 0; i < n; i++) 
-    //    prefix = prefix + "../";
-    const imageFolder: string = `/images/projects/${project.route}`;
+    import Youtube from "./youtube/Youtube.svelte";
+    import type { Project } from '$lib/project-types';
     
+    //Props
+    export let project: Project;
+
+    const imageFolder: string = `/images/projects/${project.category.toLowerCase()}/${project.route}/`;    
 </script>
 
 
@@ -37,41 +21,42 @@
 
 <div class="col-span-full font-bold text-sm md:order-3 md:text-md">
     {#if project.location} <h1>{project.location}</h1> {/if}
-    <h1>Year: {project.started}, {project.status}</h1>
-    <h1>{#if project.inHouse}In House {/if}Design by: {project.designer}</h1>
+    {#if project.started}<h1>Year: {project.started}, {project.status}</h1>{/if}
+    {#if project.designer}<h1>{#if project.inHouse}In House {/if}Design by: {project.designer}</h1>{/if}
 </div>
 
 {#if project.conceptImage}
-<div class="md:order-5 md:col-start-7 md:col-span-4 lg:col-start-9 lg:col-span-2">
+<div class="md:order-4 md:col-start-2 md:col-span-8 lg:order-5 lg:col-start-8 lg:col-span-3">
     <img src={imageFolder+project.conceptImage} alt={project.name}>
 </div>
-
-<div class="md:order-4 lg:columns-2 md:col-span-6 lg:col-span-8">
-    {#each project.text as paragraph}
-        <Paragraph extraStyles={" mb-4"}>
-            {paragraph}
-        </Paragraph>
-    {/each}
-</div>
+    {#if project.text}
+        <div class="md:order-5 md:col-start-1 md:col-span-10 lg:order-4 lg:columns-2 lg:col-span-7">
+            {#each project.text as paragraph}
+                <Paragraph extraStyles={"mb-4"} text={paragraph} />
+            {/each}
+        </div>
+    {/if}
 {:else}
-    <div class="md:order-4 md:columns-2 md:col-span-10">
-        {#each project.text as paragraph}
-            <Paragraph extraStyles={" mb-4"}>
-                {paragraph}
-            </Paragraph>
-        {/each}
-    </div>
+    {#if project.text}
+        <div class="md:order-4 md:columns-2 md:col-span-10">
+            {#each project.text as paragraph}
+                <Paragraph extraStyles={"mb-4"} text={paragraph} />
+            {/each}
+        </div>
+    {/if}
 {/if}
 
 
 {#if project.video}
-<div class="md:col-span-8 md:col-start-2 md:order-6">
-    <img src={project.video} alt={project.name}>
+<div class="md:col-span-10 md:col-start-1 md:order-6 lg:col-start-2 lg:col-span-8">
+    <Youtube id={project.video.id} altThumb={project.video.altThumb} />
 </div>
 {/if}
 
-{#each project.images as image, i}
-    <div class={`mt-4 md:order-last md:mx-4 md:col-span-5 md:col-start-${((i % 2) == 0 ? "1" : "6")}`}>
-        <img src="{imageFolder+image}" alt="{project.name}">
-    </div>
-{/each}
+{#if project.images}
+    {#each project.images as image, i}
+        <div class={`mt-4 md:order-last md:mx-4 md:col-span-5 md:col-start-${((i % 2) == 0 ? "1" : "6")}`}>
+            <img src="{imageFolder+image}" alt="{project.name}">
+        </div>
+    {/each}
+{/if}

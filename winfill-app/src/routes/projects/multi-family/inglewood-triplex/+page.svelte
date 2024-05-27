@@ -16,7 +16,10 @@
             "Description: Currently under construction the Inglewood Triplex will feature 6 individual units (above ground and 3 basement suites) totaling 5,299 s.f. of total finished living space. The structure will include 6 kitchens, 6 laundry rooms, 9 bedrooms, and 12 bathrooms. The exterior of this building will feature stucco and cedar accents as well as several skylights, and a complex basement courtyard entryway. Winfill will oversee the project to completion including building a 3-car garage and completing the full landscaping scope.",
             "Although, Winfill did not complete the design for our client on this project we were brought in early in the project development phase as a pre-construction advisor consulting on constructability and providing value engineering suggestions."
         ],
-        video: "",
+        video: {
+            id: "SLBspkzG9s8",
+            altThumb: "/video/video-screenshot.webp",
+        },
         images: [
             "1.webp",
             "2.webp",

@@ -17,7 +17,11 @@
             "The staircase features a floor-to-ceiling glass wall keeping the main floor open, as well as engineered hardwood waterfall risers complete with custom nosing and matching white oak rail. On the upper level, the courtyard creates a private ensuite at the back of the home, separate from the secondary living space, bedrooms, and laundry room. The owner’s suite overlooks the backyard, with custom built-in wardrobes and a walk-in closet. A bright oversized ensuite with a wet room with a freestanding tub, built-in shower, and heated floors accompanies the owner’s suite. The secondary bedrooms include large built-in closets and a shared ensuite. All aspects of this home were meticulously designed to enhance the livable space; high-end plumbing and light fixtures, along with their optimized layout, are evident as soon as you enter the house.",
             "The front façade features a towering brick feature wall complemented by a dark cedar alcove. A 24-foot-tall custom-fabricated steel column perched on top of a custom concrete deck ties together the frontelevation strikingly. Complete with a double-car garage, oversized backyard, and rough grading."
         ],
-        video: "/video/video-screenshot.webp",
+        video: {
+            id: "SLBspkzG9s8",
+            altThumb: "/video/video-screenshot.webp",
+            animations: true
+        },
         images: [
             "e1.webp",
             "e2.webp",

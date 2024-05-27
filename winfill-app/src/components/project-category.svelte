@@ -3,15 +3,13 @@
     export let name: string;
     export let id: string;
     export let text: string;
-    export let images: number;
-    export let imageSize: number;
+    export let imagesPerRow: number;
+    export let numImages: number;
 
-    let rowSpan: string =  `md:row-span-${Math.ceil(images / (6 / imageSize))}`;
+    let rowSpan: string =  `lg:row-span-${Math.ceil(numImages / imagesPerRow)}`;
 </script>
 
-<div id={id} class={`col-span-1 pt-6 md:col-start-1 md:col-span-2 ${rowSpan}` }>
+<div id={id} class={`col-span-full row-span-1 pt-6 lg:col-span-2 lg:col-start-1  ${rowSpan}` }>
     <h2 class="text-xl mb-4">{name}</h2>
-    <Paragraph>
-        {text}
-    </Paragraph>
+    <Paragraph text={text} />
 </div>

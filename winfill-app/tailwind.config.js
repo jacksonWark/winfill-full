@@ -4,11 +4,11 @@ module.exports = {
   safelist: [
     {
       pattern: /col-span-.+/,
-      variants: ['md']
+      variants: ['md','lg']
     },
     {
       pattern: /col-start-.+/,
-      variants: ['md']
+      variants: ['md','lg']
     },
     {
       pattern: /row-span-.+/,

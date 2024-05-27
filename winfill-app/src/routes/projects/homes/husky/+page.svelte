@@ -15,7 +15,11 @@
         text: [
             "Description: Custom 2-storey home, located on a cul-de-sac in Gold Bar. Features 3 Bedrooms, 2.5 Bathrooms, and over 2100 sq.ft of high-quality finished living space. The main entertaining level showcases engineered white oak flooring, 10’ ceilings, a gas fireplace, custom steel railings, and a dry bar/study with a beverage center. The kitchen features a 15\’ quartz island, upgraded KitchenAid appliances, a gas range, and a large pantry with a custom barn door. A generous mudroom with multiple closets and built-in seating is located at the back of the house. The upper level features a large open stairwell with open riser stairs and ample windows to serve as a light well for all levels of the home, including the basement. Spacious secondary bedrooms feature oversized built-in closets. The owner\’s suite is accompanied by an oversized ensuite with a stand-alone tub and built-in shower (waterproofed with the Schluter system and backed up by cement board). The exterior features James Hardie, board and batten, cedar accents with custom metal flashing, and an impressive custom concrete deck/planter. Complete with double car garage and landscaping."   
         ],
-        video: "/video/video-screenshot.webp",
+        video: {
+            id: "SLBspkzG9s8",
+            altThumb: "/video/video-screenshot.webp",
+            animations: true
+        },
         images: [
             "1.webp",
             "2.webp",

@@ -16,7 +16,11 @@
             "On the upper level, the owners\’ suite looks onto the tree-lined streets of Riverdale with huge floor-to-ceiling windows that are nestled into the 14\’ vaulted ceiling. Directly off the owner’s suite is a covered deck to take in all Riverdale offers. The owner’s suite has an oversized ensuite with a custom shower, a freestanding tub, and an attached walk-in closet that will not disappoint. The secondary bedrooms feature large built-in closets and a shared ensuite.",
             "The exterior features an all cedar front, complete with cedar soffit encompassing the inset second level front deck. The second-storey deck has a custom cedar privacy screen and topless glass railing. A custom concrete deck ties together the front elevation on the ground level for maximum street engagement. Complete with double car garage and rough grading."
         ],
-        video: "/video/video-screenshot.webp",
+        video: {
+            id: "SLBspkzG9s8",
+            altThumb: "/video/video-screenshot.webp",
+            animations: false
+        },
         images: [
             "1.webp",
             "2.webp",
