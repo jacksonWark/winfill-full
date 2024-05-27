@@ -18,7 +18,7 @@ export type Project = {
     conceptImage?: string;
     text?: string[];
     video?: { id: string; altThumb?: string; };
-    images?: string[];
+    images?: {path: string; width: number; height: number; side: 'left' | 'right'; start?: number }[];
 }
 
 export type Projects = Project[];

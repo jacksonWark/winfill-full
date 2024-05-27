@@ -7,6 +7,15 @@
     export let project: Project;
 
     const imageFolder: string = `/images/projects/${project.category.toLowerCase()}/${project.route}/`;    
+
+    function MapSide(side: 'left' | 'right', start?: number): number { 
+        if (start) 
+            return start
+        else {
+            if (side ==='left') return 1
+            else return 7;
+        }
+    }
 </script>
 
 
@@ -26,11 +35,11 @@
 </div>
 
 {#if project.conceptImage}
-<div class="md:order-4 md:col-start-2 md:col-span-8 lg:order-5 lg:col-start-8 lg:col-span-3">
+<div class="my-4 md:my-0 md:order-4 md:col-start-2 md:col-span-8 lg:order-5 lg:col-start-8 lg:col-span-3">
     <img src={imageFolder+project.conceptImage} alt={project.name}>
 </div>
     {#if project.text}
-        <div class="md:order-5 md:col-start-1 md:col-span-10 lg:order-4 lg:columns-2 lg:col-span-7">
+        <div class="mb-8 md:order-5 md:col-start-1 md:col-span-10 lg:order-4 lg:columns-2 lg:col-span-7">
             {#each project.text as paragraph}
                 <Paragraph extraStyles={"mb-4"} text={paragraph} />
             {/each}
@@ -38,7 +47,7 @@
     {/if}
 {:else}
     {#if project.text}
-        <div class="md:order-4 md:columns-2 md:col-span-10">
+        <div class="mb-8 md:order-4 md:columns-2 md:col-span-10">
             {#each project.text as paragraph}
                 <Paragraph extraStyles={"mb-4"} text={paragraph} />
             {/each}
@@ -48,15 +57,15 @@
 
 
 {#if project.video}
-<div class="md:col-span-10 md:col-start-1 md:order-6 lg:col-start-2 lg:col-span-8">
+<div class="mb-16 md:col-span-10 md:col-start-1 md:order-6 lg:col-start-2 lg:col-span-8">
     <Youtube id={project.video.id} altThumb={project.video.altThumb} />
 </div>
 {/if}
 
 {#if project.images}
     {#each project.images as image, i}
-        <div class={`mt-4 md:order-last md:mx-4 md:col-span-5 md:col-start-${((i % 2) == 0 ? "1" : "6")}`}>
-            <img src="{imageFolder+image}" alt="{project.name}">
+        <div class={` md:order-last md:col-span-${image.width} md:col-start-${MapSide(image.side, image.start)} md:row-span-${image.height}`}>
+            <img src="{imageFolder+image.path}" alt="{project.name}">
         </div>
     {/each}
 {/if}

@@ -9,13 +9,13 @@ export const projectGroups: ProjectGroups = [
         text: "Crafting distinctive homes that bring your vision to life, we're not just building houses &mdash; we're creating the backdrop for a lifetime of memories.",
         imagesPerRow: 2,
         projects: [
-            { source: "BoxHouse.webp", route: "box-house", alt: "Box House"},
-            { source: "PointyHouse.webp", route: "pointy-house", alt: "Pointy House"},
-            { source: "Husky.webp", route: "husky", alt: "Husky"},
-            { source: "Goliath.webp", route: "goliath", alt: "Goliath"},
-            { source: "AAA.webp", route: "aaa", alt: "AAA"},
-            { source: "Wedge.webp", route: "wedge", alt: "Wedge"},
-            { source: "RiverdaleResidence.webp", route: "riverdale-residence", alt: "Riverdale Residence"}
+            { source: "BoxHouse.webp", route: "box-house", alt: "Box House" },
+            { source: "PointyHouse.webp", route: "pointy-house", alt: "Pointy House" },
+            { source: "Husky.webp", route: "husky", alt: "Husky" },
+            { source: "Goliath.webp", route: "goliath", alt: "Goliath" },
+            { source: "AAA.webp", route: "aaa", alt: "AAA" },
+            { source: "Wedge.webp", route: "wedge", alt: "Wedge" },
+            { source: "RiverdaleResidence.webp", route: "riverdale-residence", alt: "Riverdale Residence" }
         ]
     },
     {
@@ -24,7 +24,7 @@ export const projectGroups: ProjectGroups = [
         text: "Building Multi-Family developments where every detail is designed and built with the tenant and owner in mind, we create spaces that foster connections and turn neighbors into lifelong friends.",
         imagesPerRow: 1,
         projects: [
-            { source: "Triplex.webp", route: "inglewood-triplex", alt: "Inglewood Triplex"}
+            { source: "Triplex.webp", route: "inglewood-triplex", alt: "Inglewood Triplex" }
         ]
     },
     {
@@ -33,9 +33,9 @@ export const projectGroups: ProjectGroups = [
         text: "Small-scale projects that matter, we bring your ideas to life from playhouses to custom furniture. All are designed and built in-house with a personal touch, crafted to your exact needs.",
         imagesPerRow: 3,
         projects: [
-            { source: "PlayHouse.webp", route: "lets-play", alt: "Play House"},
-            { source: "Concrete.webp", route: "concrete", alt: "Concrete"},
-            { source: "Furniture.webp", route: "furniture", alt: "Furniture"},
+            { source: "PlayHouse.webp", route: "lets-play", alt: "Play House" },
+            { source: "Concrete.webp", route: "concrete", alt: "Concrete" },
+            { source: "Furniture.webp", route: "furniture", alt: "Furniture" },
         ]
     },
     {
@@ -44,15 +44,15 @@ export const projectGroups: ProjectGroups = [
         text: "Looking for a move-in ready home or plot for your dream home? We may be able to help.",
         imagesPerRow: 2,
         projects: [
-            { source: "Allendale.webp", route: "allendale", alt: "Allendale"},
-            { source: "Strathearn.webp", route: "strathearn", alt: "Strathearn"},
+            { source: "Allendale.webp", route: "allendale", alt: "Allendale" },
+            { source: "Strathearn.webp", route: "strathearn", alt: "Strathearn" },
         ]
     }
 ];
 
 export const projects: Projects = [
     // Homes
-    {
+    { //AAA
         name: "AAA",
         category: "Homes",
         location: "Alberta Ave, Edmonton, AB",
@@ -71,15 +71,15 @@ export const projects: Projects = [
             altThumb: "/video/video-screenshot.webp"
         },
         images: [
-            "1.webp",
-            "2.webp",
-            "3.webp",
-            "4.webp",
-            "5.webp",
-            "6.webp"
+            { path: "1.webp", width: 5, height: 4, side: 'left' },
+            { path: "5.webp", width: 4, height: 4, side: 'right' },
+            { path: "3.webp", width: 5, height: 5, side: 'left' },
+            { path: "6.webp", width: 2, height: 1, side: 'right' },
+            { path: "4.webp", width: 2, height: 1, side: 'right', start: 9 },
+            { path: "2.webp", width: 4, height: 3, side: 'right' }
         ]
     },
-    {
+    { //Box House
         name: "Box House",
         category: "Homes",
         location: "Riverdale, Edmonton, AB",
@@ -99,33 +99,33 @@ export const projects: Projects = [
             altThumb: "/video/video-screenshot.webp"
         },
         images: [
-            "e1.webp",
-            "e2.webp",
-            "e3.webp",
-            "e4.webp",
-            "e5.webp",
-            "e6.webp",
-            "yeg.webp",
-            "e7.webp",
-            "e8.webp",
-            "e9.webp",
-            "i1.webp",
-            "e10.webp",
-            "e11.webp",
-            "i2.webp",
-            "i3.webp",
-            "i4.webp",
-            "i5.webp",
-            "i6.webp",
-            "i7.webp",
-            "i8.webp",
-            "i9.webp",
-            "i10.webp",
-            "e12.webp",
-            "i11.webp"
+            { path: "e1.webp", width: 5, height: 6, side: 'left' },
+            { path: "e2.webp", width: 4, height: 3, side: 'right' },
+            { path: "e3.webp", width: 2, height: 2, side: 'right' },
+            { path: "e4.webp", width: 2, height: 2, side: 'right', start: 9 },
+            { path: "e6.webp", width: 4, height: 5, side: 'right' },
+            { path: "e5.webp", width: 5, height: 5, side: 'left' },
+            { path: "e7.webp", width: 4, height: 3, side: 'right' },
+            { path: "yeg.webp", width: 5, height: 4, side: 'left' },
+            { path: "e9.webp", width: 4, height: 4, side: 'right' },
+            { path: "e8.webp", width: 5, height: 4, side: 'left' },
+            { path: "e10.webp", width: 2, height: 3, side: 'right' },
+            { path: "e11.webp", width: 2, height: 3, side: 'right', start: 9 },
+            { path: "i1.webp", width: 5, height: 4, side: 'left' },
+            { path: "i2.webp", width: 4, height: 3, side: 'right' },
+            { path: "i3.webp", width: 5, height: 4, side: 'left' },
+            { path: "i4.webp", width: 4, height: 4, side: 'right' },
+            { path: "i5.webp", width: 5, height: 5, side: 'left' },
+            { path: "i6.webp", width: 4, height: 3, side: 'right' },
+            { path: "i8.webp", width: 4, height: 5, side: 'right' },
+            { path: "i7.webp", width: 5, height: 3, side: 'left' },
+            { path: "i9.webp", width: 5, height: 5, side: 'left' },
+            { path: "i10.webp", width: 4, height: 4, side: 'right' },
+            { path: "i11.webp", width: 4, height: 5, side: 'right' },
+            { path: "e12.webp", width: 5, height: 4, side: 'left' }
         ]
     },
-    {
+    { //Goliath
         name: "Goliath",
         category: "Homes",
         location: "Gold Bar, Edmonton, AB",
@@ -143,26 +143,26 @@ export const projects: Projects = [
             altThumb: "/video/video-screenshot.webp"
         },
         images: [
-            "1.webp",
-            "2.webp",
-            "3.webp",
-            "4.webp",
-            "5.webp",
-            "6.webp",
-            "7.webp",
-            "8.webp",
-            "9.webp",
-            "10.webp",
-            "11.webp",
-            "12.webp",
-            "13.webp",
-            "14.webp",
-            "15.webp",
-            "16.webp",
-            "17.webp"
+            { path: "1.webp", width: 5, height: 4, side: 'left' },
+            { path: "2.webp", width: 4, height: 5, side: 'right' },
+            { path: "3.webp", width: 5, height: 3, side: 'left' },
+            { path: "4.webp", width: 2, height: 2, side: 'right' },
+            { path: "5.webp", width: 2, height: 2, side: 'right', start: 9 },
+            { path: "6.webp", width: 5, height: 4, side: 'left' },
+            { path: "7.webp", width: 4, height: 5, side: 'right' },
+            { path: "8.webp", width: 5, height: 3, side: 'left' },
+            { path: "9.webp", width: 4, height: 3, side: 'right' },
+            { path: "10.webp", width: 5, height: 5, side: 'left' },
+            { path: "11.webp", width: 4, height: 5, side: 'right' },
+            { path: "12.webp", width: 5, height: 5, side: 'left' },
+            { path: "13.webp", width: 2, height: 2, side: 'right' },
+            { path: "14.webp", width: 2, height: 2, side: 'right', start: 9 },
+            { path: "15.webp", width: 4, height: 3, side: 'right' },
+            { path: "16.webp", width: 5, height: 4, side: 'left' },
+            { path: "17.webp", width: 4, height: 4, side: 'right' }
         ]
     },
-    {
+    { //Husky
         name: "Husky",
         category: "Homes",
         location: "Gold Bar, Edmonton, AB",
@@ -173,34 +173,35 @@ export const projects: Projects = [
         route: "husky",
         conceptImage: "scan.webp",
         text: [
-            "Description: Custom 2-storey home, located on a cul-de-sac in Gold Bar. Features 3 Bedrooms, 2.5 Bathrooms, and over 2100 sq.ft of high-quality finished living space. The main entertaining level showcases engineered white oak flooring, 10’ ceilings, a gas fireplace, custom steel railings, and a dry bar/study with a beverage center. The kitchen features a 15\’ quartz island, upgraded KitchenAid appliances, a gas range, and a large pantry with a custom barn door. A generous mudroom with multiple closets and built-in seating is located at the back of the house. The upper level features a large open stairwell with open riser stairs and ample windows to serve as a light well for all levels of the home, including the basement. Spacious secondary bedrooms feature oversized built-in closets. The owner\’s suite is accompanied by an oversized ensuite with a stand-alone tub and built-in shower (waterproofed with the Schluter system and backed up by cement board). The exterior features James Hardie, board and batten, cedar accents with custom metal flashing, and an impressive custom concrete deck/planter. Complete with double car garage and landscaping."   
+            "Description: Custom 2-storey home, located on a cul-de-sac in Gold Bar. Features 3 Bedrooms, 2.5 Bathrooms, and over 2100 sq.ft of high-quality finished living space. The main entertaining level showcases engineered white oak flooring, 10’ ceilings, a gas fireplace, custom steel railings, and a dry bar/study with a beverage center. The kitchen features a 15\’ quartz island, upgraded KitchenAid appliances, a gas range, and a large pantry with a custom barn door. A generous mudroom with multiple closets and built-in seating is located at the back of the house. The upper level features a large open stairwell with open riser stairs and ample windows to serve as a light well for all levels of the home, including the basement. Spacious secondary bedrooms feature oversized built-in closets. The owner\’s suite is accompanied by an oversized ensuite with a stand-alone tub and built-in shower (waterproofed with the Schluter system and backed up by cement board). The exterior features James Hardie, board and batten, cedar accents with custom metal flashing, and an impressive custom concrete deck/planter. Complete with double car garage and landscaping."
         ],
         video: {
             id: "SLBspkzG9s8",
             altThumb: "/video/video-screenshot.webp"
         },
         images: [
-            "1.webp",
-            "2.webp",
-            "3.webp",
-            "4.webp",
-            "5.webp",
-            "6.webp",
-            "7.webp",
-            "8.webp",
-            "9.webp",
-            "10.webp",
-            "11.webp",
-            "12.webp",
-            "13.webp",
-            "14.webp",
-            "15.webp",
-            "16.webp",
-            "17.webp"
+            
+            { path: "1.webp", width: 5, height: 5, side: 'left' },
+            { path: "2.webp", width: 4, height: 3, side: 'right' },
+            { path: "3.webp", width: 4, height: 3, side: 'right' },
+            { path: "4.webp", width: 5, height: 4, side: 'left' },
+            { path: "5.webp", width: 4, height: 3, side: 'right' },
+            { path: "6.webp", width: 5, height: 5, side: 'left' },
+            { path: "7.webp", width: 4, height: 4, side: 'right' },
+            { path: "9.webp", width: 4, height: 3, side: 'right' },
+            { path: "8.webp", width: 5, height: 4, side: 'left' },
+            { path: "11.webp", width: 4, height: 3, side: 'right' }, 
+            { path: "10.webp", width: 5, height: 4, side: 'left' },
+            { path: "13.webp", width: 4, height: 5, side: 'right' },
+            { path: "12.webp", width: 5, height: 5, side: 'left' },
+            { path: "15.webp", width: 4, height: 3, side: 'right' },
+            { path: "14.webp", width: 5, height: 4, side: 'left' },
+            { path: "17.webp", width: 4, height: 5, side: 'right' },
+            { path: "16.webp", width: 5, height: 3, side: 'left' }
         ]
 
     },
-    {
+    { //Pointy House
         name: "Pointy House",
         category: "Homes",
         location: "Riverdale, Edmonton, AB",
@@ -220,17 +221,17 @@ export const projects: Projects = [
             altThumb: "/video/video-screenshot.webp"
         },
         images: [
-            "1.webp",
-            "2.webp",
-            "3.webp",
-            "4.webp",
-            "5.webp",
-            "6.webp",
-            "7.webp",
-            "8.webp"
+            { path: "1.webp", width: 5, height: 6, side: 'left' },
+            { path: "2.webp", width: 4, height: 3, side: 'right' },
+            { path: "3.webp", width: 4, height: 3, side: 'right' },
+            { path: "4.webp", width: 5, height: 4, side: 'left' },
+            { path: "5.webp", width: 2, height: 3, side: 'right' },
+            { path: "6.webp", width: 2, height: 3, side: 'right', start: 9 },
+            { path: "8.webp", width: 4, height: 5, side: 'right' },
+            { path: "7.webp", width: 5, height: 4, side: 'left' }
         ]
     },
-    {
+    { //Riverdale Residence
         name: "Riverdale Residence",
         category: "Homes",
         location: "Gold Bar, Edmonton, AB",
@@ -241,7 +242,7 @@ export const projects: Projects = [
         route: "riverdale-residence",
         conceptImage: "scan.webp",
         text: [
-            "Description: "   
+            "Description: "
         ],
         video: {
             id: "SLBspkzG9s8",
@@ -249,14 +250,14 @@ export const projects: Projects = [
 
         },
         images: [
-            "1.webp",
-            "2.webp",
-            "3.webp",
-            "4.webp",
-            "5.webp"
+            { path: "1.webp", width: 5, height: 5, side: 'left' },
+            { path: "2.webp", width: 5, height: 5, side: 'left' },
+            { path: "3.webp", width: 5, height: 5, side: 'left' },
+            { path: "4.webp", width: 5, height: 5, side: 'left' },
+            { path: "5.webp", width: 5, height: 5, side: 'left' }
         ]
     },
-    {
+    { //Wedge
         name: "Wedge",
         category: "Homes",
         location: "Beverly, Calgary, AB",
@@ -275,22 +276,20 @@ export const projects: Projects = [
             altThumb: "/video/video-screenshot.webp",
         },
         images: [
-            "1.webp",
-            "2.webp",
-            "3.webp",
-            "4.webp",
-            "5.webp",
-            "6.webp",
-            "7.webp",
-            "8.webp",
-            "9.webp",
-            "10.webp",
-            "11.webp",
-            "12.webp"
+            { path: "1.webp", width: 5, height: 5, side: 'left' },
+            { path: "3.webp", width: 4, height: 3, side: 'right' },
+            { path: "4.webp", width: 4, height: 4, side: 'right' },
+            { path: "6.webp", width: 5, height: 4, side: 'left' },
+            { path: "7.webp", width: 4, height: 4, side: 'right' },
+            { path: "5.webp", width: 5, height: 5, side: 'left' },
+            { path: "8.webp", width: 2, height: 2, side: 'right' },
+            { path: "12.webp", width: 2, height: 2, side: 'right', start: 9 },
+            { path: "11.webp", width: 5, height: 6, side: 'left' },
+            { path: "9.webp", width: 4, height: 5, side: 'right' }
         ]
     },
     // Multi Family
-    {
+    { //Inglewood Triplex
         name: "Inglewood 3+3",
         category: "Multi-Family",
         location: "Inglewood, Edmonton, AB",
@@ -309,16 +308,16 @@ export const projects: Projects = [
             altThumb: "/video/video-screenshot.webp",
         },
         images: [
-            "1.webp",
-            "2.webp",
-            "3.webp",
-            "4.webp",
-            "5.webp",
-            "6.webp"
+            { path: "1.webp", width: 5, height: 5, side: 'left' },
+            { path: "2.webp", width: 4, height: 4, side: 'right' },
+            { path: "4.webp", width: 4, height: 5, side: 'right' },
+            { path: "3.webp", width: 5, height: 4, side: 'left' },
+            { path: "5.webp", width: 5, height: 4, side: 'left' },
+            { path: "6.webp", width: 4, height: 5, side: 'right' }
         ]
     },
     // For Sale
-    {
+    { //Strathearn
         name: "Strathearn",
         category: "For-Sale",
         location: "",
@@ -335,11 +334,9 @@ export const projects: Projects = [
             id: "SLBspkzG9s8",
             altThumb: "/video/video-screenshot.webp",
         },
-        images: [
-            ""
-        ]
+        images: []
     },
-    {
+    { //Allendale
         name: "Allendale",
         category: "For-Sale",
         location: "",
@@ -356,9 +353,7 @@ export const projects: Projects = [
             id: "SLBspkzG9s8",
             altThumb: "/video/video-screenshot.webp",
         },
-        images: [
-            ""
-        ]
+        images: []
     },
     // Small Projects
     {
