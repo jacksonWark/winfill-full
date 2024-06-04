@@ -6,7 +6,7 @@
     //Props
     export let project: Project;
 
-    const imageFolder: string = `/images/projects/${project.category.toLowerCase()}/${project.route}/`;    
+    const imageFolder: string = `/images/projects/${project.route}/`;    
 
     function MapSide(side: 'left' | 'right', start?: number): number { 
         if (start) 

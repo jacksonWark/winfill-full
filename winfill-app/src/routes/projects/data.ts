@@ -1,9 +1,9 @@
-import type { Project, Projects, ProjectGroups } from '$lib/project-types';
+import type { Projects, ProjectGroups } from '$lib/project-types';
 
 export const imagePath = "./images/projects/";
 
 export const projectGroups: ProjectGroups = [
-    {
+    { //Homes
         name: 'Homes',
         id: 'homes',
         text: "Crafting distinctive homes that bring your vision to life, we're not just building houses &mdash; we're creating the backdrop for a lifetime of memories.",
@@ -18,7 +18,7 @@ export const projectGroups: ProjectGroups = [
             { source: "RiverdaleResidence.webp", route: "riverdale-residence", alt: "Riverdale Residence" }
         ]
     },
-    {
+    { //Multi Family
         name: "Multi-Family",
         id: "multi-family",
         text: "Building Multi-Family developments where every detail is designed and built with the tenant and owner in mind, we create spaces that foster connections and turn neighbors into lifelong friends.",
@@ -27,7 +27,7 @@ export const projectGroups: ProjectGroups = [
             { source: "Triplex.webp", route: "inglewood-triplex", alt: "Inglewood Triplex" }
         ]
     },
-    {
+    { //Small Projects
         name: "Small Projects",
         id: "small-projects",
         text: "Small-scale projects that matter, we bring your ideas to life from playhouses to custom furniture. All are designed and built in-house with a personal touch, crafted to your exact needs.",
@@ -38,7 +38,7 @@ export const projectGroups: ProjectGroups = [
             { source: "Furniture.webp", route: "furniture", alt: "Furniture" },
         ]
     },
-    {
+    { //For Sale
         name: "For Sale",
         id: "for-sale",
         text: "Looking for a move-in ready home or plot for your dream home? We may be able to help.",
@@ -251,10 +251,10 @@ export const projects: Projects = [
         },
         images: [
             { path: "1.webp", width: 5, height: 5, side: 'left' },
-            { path: "2.webp", width: 5, height: 5, side: 'left' },
-            { path: "3.webp", width: 5, height: 5, side: 'left' },
-            { path: "4.webp", width: 5, height: 5, side: 'left' },
-            { path: "5.webp", width: 5, height: 5, side: 'left' }
+            { path: "2.webp", width: 4, height: 5, side: 'right' },
+            { path: "3.webp", width: 5, height: 4, side: 'left' },
+            { path: "4.webp", width: 4, height: 4, side: 'right' },
+            { path: "5.webp", width: 5, height: 4, side: 'left' }
         ]
     },
     { //Wedge

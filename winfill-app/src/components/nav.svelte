@@ -1,37 +1,35 @@
 <script lang="ts">
     import { base } from "$app/paths";
+    import { onNavigate } from "$app/navigation";
 
-    //type Route = 'dashboard' | 'team' | 'projects' | 'calendar';
-    //import { page } from '$app/stores';
-    //$: route = $page.url.pathname.split('/').filter(Boolean).pop() || '/';
-    //let currStyle = "size-min leading-none font-bold hover:text-orange p-2.5 underline decoration-orange decoration-2";
     let defStyle = "size-min leading-none font-bold hover:text-orange p-2.5";
-    //$: console.log(`page is ${route}`)
-</script>
 
-<style>
-    #menu-toggle:checked + #menu {
-        display: flex;
-      }
-</style>
+    let menuOpen: boolean = false;
+    onNavigate(() => { menuOpen = false });
+    onscroll = () => { menuOpen = false };
+
+    let body = document.getElementById('body');
+    body?.addEventListener("click", function () { menuOpen = false }, false);
+    
+</script>
 
 <!-- NAVIGATION -->
 <nav class="flex flex-col mb-6">
     <div class="flex flex-nowrap flex-col border-1 border-b relative md:flex-row">
-        <a class="block" href="/">
-            <img class="w-44 xs:w-36 md:h-14 md:w-min max-w-none" src={base+"/images/Winfill_Logo-Top.png"} alt="Winfill Developments">  
-        </a>
-        <label for="menu-toggle" class="cursor-pointer absolute right-0 top-0 md:hidden block">
-            <svg class="fill-current text-black-900" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 20 20">
-                <title>menu</title> <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-            </svg>
-        </label>
-        <input class="hidden" type="checkbox" id="menu-toggle"/>
+        <div class="flex justify-between flex-row">
+            <a class="block" href="/">
+                <img class="w-44 xs:w-36 md:h-14 md:w-min max-w-none" src={base+"/images/Winfill_Logo-Top.png"} alt="Winfill Developments">  
+            </a>
+            <button id='menu-toggle' class="block cursor-pointer right-0 top-0 z-50 md:hidden" on:click={(ev)=>{menuOpen = !menuOpen; ev.stopPropagation()}}>
+                <svg class="fill-current text-black-900" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 20 20">
+                    <title>menu</title> <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+            </button>
+        </div>
             
-        <div class=
-            "hidden w-full flex-col mb-5 items-center text-center 
-            md:flex md:flex-row md:justify-around md:items-stretch md:grow md:justify-around md:mb-0" 
-        id="menu">
+        <div id="menu" on:click={(ev) => {ev.stopPropagation();}} class=
+            {`${menuOpen ? 'flex' : 'hidden'} w-full flex-col mb-5 items-center text-center 
+            md:flex md:flex-row md:justify-around md:items-stretch md:grow md:justify-around md:mb-0`} >
             <div class="flex flex-col p-x-8  md:flex-row md:grow md:justify-around md:px-6 xl:px-16">
                 <div class="flex flex-col-reverse">
                     <div id="projects" class="size-auto relative group/projects translate-y-1.5">
