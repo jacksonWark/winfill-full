@@ -1,7 +1,5 @@
 import type { Projects, ProjectGroups } from '$lib/project-types';
 
-export const imagePath = "./images/projects/";
-
 export const projectGroups: ProjectGroups = [
     { //Homes
         name: 'Homes',
@@ -22,7 +20,7 @@ export const projectGroups: ProjectGroups = [
         name: "Multi-Family",
         id: "multi-family",
         text: "Building Multi-Family developments where every detail is designed and built with the tenant and owner in mind, we create spaces that foster connections and turn neighbors into lifelong friends.",
-        imagesPerRow: 1,
+        imagesPerRow: 2,
         projects: [
             { source: "Triplex.webp", route: "inglewood-triplex", alt: "Inglewood Triplex" }
         ]

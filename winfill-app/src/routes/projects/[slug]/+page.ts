@@ -16,3 +16,5 @@ export function entries() {
 }
 
 export const prerender = true;
+//For dynamic generated routes projects/example-project = projects/example
+export const trailingSlash = 'never'; 

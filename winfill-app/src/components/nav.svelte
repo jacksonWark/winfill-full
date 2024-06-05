@@ -27,9 +27,9 @@
             </button>
         </div>
             
-        <div id="menu" on:click={(ev) => {ev.stopPropagation();}} class=
-            {`${menuOpen ? 'flex' : 'hidden'} w-full flex-col mb-5 items-center text-center 
-            md:flex md:flex-row md:justify-around md:items-stretch md:grow md:justify-around md:mb-0`} >
+        <div id="menu" role="navigation" on:click={(ev) => {ev.stopPropagation();}} 
+            class=  {`${menuOpen ? 'flex' : 'hidden'} w-full flex-col mb-5 items-center text-center 
+                    md:flex md:flex-row md:justify-around md:items-stretch md:grow md:justify-around md:mb-0`} >
             <div class="flex flex-col p-x-8  md:flex-row md:grow md:justify-around md:px-6 xl:px-16">
                 <div class="flex flex-col-reverse">
                     <div id="projects" class="size-auto relative group/projects translate-y-1.5">

@@ -19,7 +19,7 @@ const config = {
 			assets: 'build',
 			fallback: undefined,
 			precompress: false,
-			strict: false
+			strict: true //false
 		}),
 		prerender: {
 			handleHttpError: 'ignore'

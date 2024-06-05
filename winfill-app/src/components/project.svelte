@@ -1,12 +1,13 @@
 <script lang="ts">
     import Paragraph from "./paragraph.svelte";
     import Youtube from "./youtube/Youtube.svelte";
+    import { imagePath } from "$lib/project-consts"
     import type { Project } from '$lib/project-types';
     
     //Props
     export let project: Project;
 
-    const imageFolder: string = `/images/projects/${project.route}/`;    
+    const imageFolder: string = `${imagePath}${project.route}/`;    
 
     function MapSide(side: 'left' | 'right', start?: number): number { 
         if (start) 
