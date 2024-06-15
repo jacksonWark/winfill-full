@@ -3,6 +3,7 @@
     import Youtube from "./youtube/Youtube.svelte";
     import { imagePath } from "$lib/project-consts"
     import type { Project } from '$lib/project-types';
+    import { IsBulletList } from "$lib/project-types";
     
     //Props
     export let project: Project;
@@ -29,10 +30,10 @@
     <a href="https://www.instagram.com/winfill_developments/" target="_blank" rel="noopener noreferrer" class="underline decoration-orange hover:text-orange text-right">Instagram</a> 
 </div>
 
-<div class="col-span-full font-bold text-sm md:order-3 md:text-md">
-    {#if project.location} <h1>{project.location}</h1> {/if}
-    {#if project.started}<h1>Year: {project.started}, {project.status}</h1>{/if}
-    {#if project.designer}<h1>{#if project.inHouse}In House {/if}Design by: {project.designer}</h1>{/if}
+<div class="col-span-full text-sm md:order-3 md:text-md">
+    {#if project.location}<h1 class="font-bold pr-1">{project.location}</h1>{/if}
+    {#if project.started}<div><h1 class="font-bold pr-1 inline">Year:</h1><h1 class="inline">{project.started}, {project.status}</h1></div>{/if}
+    {#if project.designer}<div><h1 class="font-bold pr-1 inline">{#if project.inHouse}In House {/if}Design by: </h1><h1 class="inline">{project.designer}</h1></div>{/if}
 </div>
 
 {#if project.conceptImage}
@@ -41,16 +42,20 @@
 </div>
     {#if project.text}
         <div class="mb-8 md:order-5 md:col-start-1 md:col-span-10 lg:order-4 lg:columns-2 lg:col-span-7">
-            {#each project.text as paragraph}
-                <Paragraph extraStyles={"mb-4"} text={paragraph} />
+            {#each project.text as paragraph, i}
+                {#if !IsBulletList(paragraph)}
+                    <Paragraph extraStyles={"mb-4"} text={paragraph} title={i == 0 ? 'Description: ' : ''}/>
+                {/if}
             {/each}
         </div>
     {/if}
 {:else}
     {#if project.text}
         <div class="mb-8 md:order-4 md:columns-2 md:col-span-10">
-            {#each project.text as paragraph}
-                <Paragraph extraStyles={"mb-4"} text={paragraph} />
+            {#each project.text as paragraph,i}
+                {#if !IsBulletList(paragraph)}
+                    <Paragraph extraStyles={"mb-4"} text={paragraph} title={i == 0 ? 'Description: ' : ''}/>
+                {/if}
             {/each}
         </div>
     {/if}

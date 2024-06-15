@@ -56,7 +56,7 @@
             <div class="flex flex-col md:flex-row">
                 <div class="flex flex-col-reverse">
                     <div id="contact" class="size-auto relative group/contact translate-y-1.5">
-                        <a class="size-min leading-none font-bold hover:text-orange p-2.5 md:py-2.5 md:pr-0" href="/#">Contact</a>
+                        <a class="size-min leading-none font-bold hover:text-orange p-2.5 md:py-2.5 md:pr-0" href="/contact">Contact</a>
                     </div>
                 </div>
             </div>

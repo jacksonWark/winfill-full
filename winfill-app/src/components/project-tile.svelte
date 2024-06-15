@@ -5,6 +5,8 @@
     export let imagesPerRow: number;
     export let index: number;
     
+    import { imagePath } from '$lib/project-consts';
+
     let sizeMedium = Math.floor(10 / imagesPerRow);
     let sizeLarge = Math.floor(6 / imagesPerRow);
     let rowIndex = index % imagesPerRow;
@@ -18,10 +20,19 @@
 
 
 <div class={style}>
+    {#if !(source === '')}
     <a href={route} class="block relative" on:mouseenter={()=>{active = true}} on:mouseleave={()=>{active = false}}>
-        <img src={source} alt={alt} class="w-full">
+        <img src={imagePath+source} alt={alt} class="w-full">
         <div class={(active == true ? "md:flex" : "md:hidden") + " absolute bottom-0 w-full h-8 md:size-full md:top-0 items-center transition backdrop-brightness-50"}>
             <h1 class="text-orange font-bold text-xl text-center w-full">{alt}</h1>
         </div>
     </a>
+    {:else}
+    <div class="block relative">
+        <img src={imagePath+'/empty.webp'} alt={alt} class="w-full border">
+        <div class="flex absolute bottom-0 w-full h-8 md:size-full md:top-0 items-center">
+            <h1 class="font-bold text-xl text-center w-full">{alt}</h1>
+        </div>
+    </div>
+    {/if}
 </div>

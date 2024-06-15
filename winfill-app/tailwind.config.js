@@ -12,9 +12,8 @@ module.exports = {
     },
     {
       pattern: /row-span-.+/,
-      variants: ['md']
-    }
-
+      variants: ['md','lg']
+    },
   ],
   theme: {
     colors: {

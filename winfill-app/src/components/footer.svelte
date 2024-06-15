@@ -5,7 +5,7 @@
         <a href="https://www.instagram.com/winfill_developments/" target="_blank" rel="noopener noreferrer" class="font-bold translate-y-1.5 text-right">Instagram</a>
     </div>
     <div class="flex justify-self-center hover:text-orange md:justify-self-end md:col-start-10 md:flex-col-reverse">
-        <a href="." class="font-bold translate-y-1.5">Contact</a>
+        <a href="/contact" class="font-bold translate-y-1.5">Contact</a>
     </div>
     <div class="col-span-full border-t leading-tight">
         &copy Winfill Developments 2024

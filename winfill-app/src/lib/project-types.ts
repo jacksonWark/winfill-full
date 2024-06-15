@@ -6,6 +6,21 @@ export type ProjectGroups = {
     projects: {source: string; route: string; alt: string}[]
 }[];
 
+export type ImageGallery = {
+    path: string; 
+    width: number; 
+    height: number; 
+    side: 'left' | 'right'; 
+    start?: number 
+}[];
+
+export type TextDescription = (string | BulletList)[];
+export type BulletList = string[];
+
+export function IsBulletList(textDescriptionElement: string | BulletList): textDescriptionElement is BulletList {
+    return Array.isArray(textDescriptionElement as BulletList) === true;
+}
+
 export type Project = {
     name: string;
     category: string;
@@ -16,9 +31,25 @@ export type Project = {
     inHouse?: boolean;
     route: string;
     conceptImage?: string;
-    text?: string[];
+    text?: TextDescription;
     video?: { id: string; altThumb?: string; };
-    images?: {path: string; width: number; height: number; side: 'left' | 'right'; start?: number }[];
+    images?: ImageGallery;
 }
 
+export type SmallProject = {
+    name: string;
+    designer?: string;
+    inHouse?: boolean;
+    materials?: string;
+    text?: TextDescription;
+    images?: ImageGallery;
+};
+
+export type SmallProjects = {
+    groupName: string;
+    route: string;
+    group: SmallProject[]
+};
+
 export type Projects = Project[];
+export type MixedProjects = (Project | SmallProjects)[]

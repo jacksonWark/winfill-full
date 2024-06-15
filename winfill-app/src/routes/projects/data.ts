@@ -1,4 +1,4 @@
-import type { Projects, ProjectGroups } from '$lib/project-types';
+import type { MixedProjects, ProjectGroups } from '$lib/project-types';
 
 export const projectGroups: ProjectGroups = [
     { //Homes
@@ -8,7 +8,7 @@ export const projectGroups: ProjectGroups = [
         imagesPerRow: 2,
         projects: [
             { source: "BoxHouse.webp", route: "box-house", alt: "Box House" },
-            { source: "PointyHouse.webp", route: "pointy-house", alt: "Pointy House" },
+            { source: "PointyHouse_2.jpg", route: "pointy-house", alt: "Pointy House" },
             { source: "Husky.webp", route: "husky", alt: "Husky" },
             { source: "Goliath.webp", route: "goliath", alt: "Goliath" },
             { source: "AAA.webp", route: "aaa", alt: "AAA" },
@@ -31,9 +31,9 @@ export const projectGroups: ProjectGroups = [
         text: "Small-scale projects that matter, we bring your ideas to life from playhouses to custom furniture. All are designed and built in-house with a personal touch, crafted to your exact needs.",
         imagesPerRow: 3,
         projects: [
-            { source: "PlayHouse.webp", route: "lets-play", alt: "Play House" },
-            { source: "Concrete.webp", route: "concrete", alt: "Concrete" },
             { source: "Furniture.webp", route: "furniture", alt: "Furniture" },
+            { source: "PlayHouse.webp", route: "lets-play", alt: "Play House" },
+            { source: "Concrete.webp", route: "concrete", alt: "Concrete" },   
         ]
     },
     { //For Sale
@@ -42,13 +42,12 @@ export const projectGroups: ProjectGroups = [
         text: "Looking for a move-in ready home or plot for your dream home? We may be able to help.",
         imagesPerRow: 2,
         projects: [
-            { source: "Allendale.webp", route: "allendale", alt: "Allendale" },
-            { source: "Strathearn.webp", route: "strathearn", alt: "Strathearn" },
+            { source: "", route: "", alt: "No Inventory" },
         ]
     }
 ];
 
-export const projects: Projects = [
+export const projects: MixedProjects = [
     // Homes
     { //AAA
         name: "AAA",
@@ -61,7 +60,7 @@ export const projects: Projects = [
         route: "aaa",
         conceptImage: "scan.webp",
         text: [
-            "Description: Currently in permitting, this rear addition will be situated on a beautiful 110-year-old home in the Alberta Ave neighborhood. Winfill will replace an existing addition while bringing the design more in line with the traditional style of the home and improving the exterior envelope to allow the clients to enjoy their home for years to come.",
+            "Currently in permitting, this rear addition will be situated on a beautiful 110-year-old home in the Alberta Ave neighborhood. Winfill will replace an existing addition while bringing the design more in line with the traditional style of the home and improving the exterior envelope to allow the clients to enjoy their home for years to come.",
             "The addition takes styling cues from the rooflines of the facade of the home while interfacing with existing second-floor windows. The interior floor plan was also optimized to the current owners needs. The addition will be clad in traditional cedar painted white, cedar shakes, and burgundy accents."
         ],
         video: {
@@ -88,7 +87,7 @@ export const projects: Projects = [
         route: "box-house",
         conceptImage: "scan.webp",
         text: [
-            "Description: This versatile 2400 s.f. home features 3 Bedrooms and 2.5 Baths designed around a unique mid-home courtyard. On the main floor, the courtyard brings abundant natural light to the chefs inspired kitchen and the formal dining room while providing a secluded outdoor cooking, living, and dining space off the kitchen. Finishes on the main floor include engineered hardwood flooring, 10’ ceilings, and a gas fireplace. The kitchen features quartz countertops, an oversized island, upgraded KitchenAid appliances, a gas range, and a built-in breakfast nook for informal dining. At the back of the home, you will find a formal dining room, an office overlooking a treed backyard, a half bath, and a generous mudroom with multiple storage closets.",
+            "This versatile 2400 s.f. home features 3 Bedrooms and 2.5 Baths designed around a unique mid-home courtyard. On the main floor, the courtyard brings abundant natural light to the chefs inspired kitchen and the formal dining room while providing a secluded outdoor cooking, living, and dining space off the kitchen. Finishes on the main floor include engineered hardwood flooring, 10’ ceilings, and a gas fireplace. The kitchen features quartz countertops, an oversized island, upgraded KitchenAid appliances, a gas range, and a built-in breakfast nook for informal dining. At the back of the home, you will find a formal dining room, an office overlooking a treed backyard, a half bath, and a generous mudroom with multiple storage closets.",
             "The staircase features a floor-to-ceiling glass wall keeping the main floor open, as well as engineered hardwood waterfall risers complete with custom nosing and matching white oak rail. On the upper level, the courtyard creates a private ensuite at the back of the home, separate from the secondary living space, bedrooms, and laundry room. The owner’s suite overlooks the backyard, with custom built-in wardrobes and a walk-in closet. A bright oversized ensuite with a wet room with a freestanding tub, built-in shower, and heated floors accompanies the owner’s suite. The secondary bedrooms include large built-in closets and a shared ensuite. All aspects of this home were meticulously designed to enhance the livable space; high-end plumbing and light fixtures, along with their optimized layout, are evident as soon as you enter the house.",
             "The front façade features a towering brick feature wall complemented by a dark cedar alcove. A 24-foot-tall custom-fabricated steel column perched on top of a custom concrete deck ties together the frontelevation strikingly. Complete with a double-car garage, oversized backyard, and rough grading."
         ],
@@ -171,7 +170,7 @@ export const projects: Projects = [
         route: "husky",
         conceptImage: "scan.webp",
         text: [
-            "Description: Custom 2-storey home, located on a cul-de-sac in Gold Bar. Features 3 Bedrooms, 2.5 Bathrooms, and over 2100 sq.ft of high-quality finished living space. The main entertaining level showcases engineered white oak flooring, 10’ ceilings, a gas fireplace, custom steel railings, and a dry bar/study with a beverage center. The kitchen features a 15\’ quartz island, upgraded KitchenAid appliances, a gas range, and a large pantry with a custom barn door. A generous mudroom with multiple closets and built-in seating is located at the back of the house. The upper level features a large open stairwell with open riser stairs and ample windows to serve as a light well for all levels of the home, including the basement. Spacious secondary bedrooms feature oversized built-in closets. The owner\’s suite is accompanied by an oversized ensuite with a stand-alone tub and built-in shower (waterproofed with the Schluter system and backed up by cement board). The exterior features James Hardie, board and batten, cedar accents with custom metal flashing, and an impressive custom concrete deck/planter. Complete with double car garage and landscaping."
+            "Custom 2-storey home, located on a cul-de-sac in Gold Bar. Features 3 Bedrooms, 2.5 Bathrooms, and over 2100 sq.ft of high-quality finished living space. The main entertaining level showcases engineered white oak flooring, 10’ ceilings, a gas fireplace, custom steel railings, and a dry bar/study with a beverage center. The kitchen features a 15\’ quartz island, upgraded KitchenAid appliances, a gas range, and a large pantry with a custom barn door. A generous mudroom with multiple closets and built-in seating is located at the back of the house. The upper level features a large open stairwell with open riser stairs and ample windows to serve as a light well for all levels of the home, including the basement. Spacious secondary bedrooms feature oversized built-in closets. The owner\’s suite is accompanied by an oversized ensuite with a stand-alone tub and built-in shower (waterproofed with the Schluter system and backed up by cement board). The exterior features James Hardie, board and batten, cedar accents with custom metal flashing, and an impressive custom concrete deck/planter. Complete with double car garage and landscaping."
         ],
         video: {
             id: "SLBspkzG9s8",
@@ -210,7 +209,7 @@ export const projects: Projects = [
         route: "pointy-house",
         conceptImage: "scan.webp",
         text: [
-            "Description: The neighboring home of the Box House, this custom 2350 s.f. 2-Storey infill home features a unique minimal gable design. 10044 features 3 bedrooms, 2.5 bathrooms, and an office workspace. The main entertaining level takes advantage of open concept design, creating a flowing space from semi-private office, to living, to dining, to the kitchen, while interior design decisions provide clear breaks in space usage. Finishes on the main floor include engineered flooring, 10\’ ceilings, and a gas fireplace. The galley kitchen features a quartz island, upgraded KitchenAid appliances, a gas range, bar seating, and a large pantry with custom shelving and a barn door. The kitchen opens onto the back deck for easy outdoor cooking and a view of the oversized backyard. The staircase features floor-to-ceiling glass wall keeping the main floor open, and engineered hardwood waterfall risers complete with custom nosing.",
+            "The neighboring home of the Box House, this custom 2350 s.f. 2-Storey infill home features a unique minimal gable design. 10044 features 3 bedrooms, 2.5 bathrooms, and an office workspace. The main entertaining level takes advantage of open concept design, creating a flowing space from semi-private office, to living, to dining, to the kitchen, while interior design decisions provide clear breaks in space usage. Finishes on the main floor include engineered flooring, 10\’ ceilings, and a gas fireplace. The galley kitchen features a quartz island, upgraded KitchenAid appliances, a gas range, bar seating, and a large pantry with custom shelving and a barn door. The kitchen opens onto the back deck for easy outdoor cooking and a view of the oversized backyard. The staircase features floor-to-ceiling glass wall keeping the main floor open, and engineered hardwood waterfall risers complete with custom nosing.",
             "On the upper level, the owners\’ suite looks onto the tree-lined streets of Riverdale with huge floor-to-ceiling windows that are nestled into the 14\’ vaulted ceiling. Directly off the owner’s suite is a covered deck to take in all Riverdale offers. The owner’s suite has an oversized ensuite with a custom shower, a freestanding tub, and an attached walk-in closet that will not disappoint. The secondary bedrooms feature large built-in closets and a shared ensuite.",
             "The exterior features an all cedar front, complete with cedar soffit encompassing the inset second level front deck. The second-storey deck has a custom cedar privacy screen and topless glass railing. A custom concrete deck ties together the front elevation on the ground level for maximum street engagement. Complete with double car garage and rough grading."
         ],
@@ -240,7 +239,7 @@ export const projects: Projects = [
         route: "riverdale-residence",
         conceptImage: "scan.webp",
         text: [
-            "Description: "
+            ""
         ],
         video: {
             id: "SLBspkzG9s8",
@@ -266,7 +265,7 @@ export const projects: Projects = [
         route: "wedge",
         conceptImage: "scan.webp",
         text: [
-            "Description: Currently under construction, this Four Seasons Room will be situated on a beautiful Midcentury home in the Belaire neighborhood. Large setbacks enforced by the restricted covenant led us to follow the property line on an angled addition to maximize space. The Four Seasons room will contain a swim spa wood-burning fireplace and exercise equipment allowing the owners to enjoy their favorite activities close to home in their forever home.",
+            "Currently under construction, this Four Seasons Room will be situated on a beautiful Midcentury home in the Belaire neighborhood. Large setbacks enforced by the restricted covenant led us to follow the property line on an angled addition to maximize space. The Four Seasons room will contain a swim spa wood-burning fireplace and exercise equipment allowing the owners to enjoy their favorite activities close to home in their forever home.",
             "The addition strived to integrate this unique footprint into the existing home, beginning with a miter glass corner softening the front and ending with access to the backyard for entertainment. Clad in stucco and stone, the addition fits into the pallet while introducing wood gives the addition a warm feeling, blending it into the heavily treed side yard with 10\’ setback."
         ],
         video: {
@@ -298,7 +297,7 @@ export const projects: Projects = [
         route: "inglewood-triplex",
         conceptImage: "scan.webp",
         text: [
-            "Description: Currently under construction the Inglewood Triplex will feature 6 individual units (above ground and 3 basement suites) totaling 5,299 s.f. of total finished living space. The structure will include 6 kitchens, 6 laundry rooms, 9 bedrooms, and 12 bathrooms. The exterior of this building will feature stucco and cedar accents as well as several skylights, and a complex basement courtyard entryway. Winfill will oversee the project to completion including building a 3-car garage and completing the full landscaping scope.",
+            "Currently under construction the Inglewood Triplex will feature 6 individual units (above ground and 3 basement suites) totaling 5,299 s.f. of total finished living space. The structure will include 6 kitchens, 6 laundry rooms, 9 bedrooms, and 12 bathrooms. The exterior of this building will feature stucco and cedar accents as well as several skylights, and a complex basement courtyard entryway. Winfill will oversee the project to completion including building a 3-car garage and completing the full landscaping scope.",
             "Although, Winfill did not complete the design for our client on this project we were brought in early in the project development phase as a pre-construction advisor consulting on constructability and providing value engineering suggestions."
         ],
         video: {
@@ -354,12 +353,178 @@ export const projects: Projects = [
         images: []
     },
     // Small Projects
-    {
-        name: "",
-        category: "Small-Projects",
-        location: "",
-        status: "Small Projects",
-        designer: "",
-        route: "small-project",
+    { //Let's Play
+        groupName: "Let's Play",
+        route: "lets-play",
+        group: [
+            {
+                name: "Let's Play!",
+                designer: "Kurtis Wiun",
+                inHouse: true,
+                materials: "Cedar, Plywood, S.P.F.",
+                
+                text: [
+                    `This mini infill was desined for a young client. This project was fun to design and build with more building details than meets the eye. 
+                    The building envelope is a pond liner W.R.B. complete with rain screen, then clad in Cedar. The pond liner envelope allowed us to maintain a 
+                    water-tight roof while continuing the mitered cedar boards on the roof plane to maintain continous wrap effect. The interior walls are clad in plywood 
+                    treated with a water based finish, with chalk wall accents.`
+                ],
+                images : [
+                    { path: "playhouse-1.webp", width: 4, height: 4, side: 'left' },
+                    { path: "playhouse-2.webp", width: 3, height: 3, side: 'left' },
+                    { path: "playhouse-3.webp", width: 3, height: 3, side: 'right' },
+                    { path: "playhouse-4.webp", width: 4, height: 4, side: 'left' }
+                ]
+            }
+        ]
+    },
+    { //Concrete
+        groupName: 'Concrete',
+        route: "concrete",
+        group: [
+            {
+                name: "Self-Performing Concrete",
+                text: [
+                    `One of our self-perform specialties is concrete work. Self-performing concrete allows us to enhance quality, efficiency, and affordability. 
+                    By handling concrete tasks in-house, Winfill ensures a higher standard of craftsmanship, as our dedicated team is familiar with their specific 
+                    standards and expectations. This control over the concrete process allows for greater precision. Additionally, it streamlines the construction 
+                    timeline, eliminating the delays often associated with coordinating third-party contractors. Cost efficiency is another significant advantage, 
+                    as we can manage expenses more effectively by avoiding subcontractor markups and optimizing material usage. Ultimately, self-performing concrete 
+                    work translates to superior, timely, and cost-effective architectural concrete.`
+                ],
+                images : [
+                    { path: "concrete-1.jpg", width: 3, height: 2, side: 'left' },
+                    { path: "concrete-2.jpg", width: 3, height: 2, side: 'right' },
+                    { path: "concrete-3.jpg", width: 3, height: 2, side: 'left' },
+                    { path: "concrete-4.jpg", width: 3, height: 2, side: 'right' },
+                    { path: "concrete-5.jpg", width: 3, height: 2, side: 'left' },
+                    { path: "concrete-6.jpg", width: 3, height: 2, side: 'right' },
+                    { path: "concrete-7.jpg", width: 3, height: 2, side: 'left' },
+                    { path: "concrete-8.HEIC", width: 3, height: 2, side: 'right' },
+                    { path: "concrete-9.HEIC", width: 3, height: 2, side: 'left' },
+                    { path: "concrete-10.HEIC", width: 3, height: 2, side: 'right' }
+                ]
+            }
+        ]
+    },
+    { //Furniture
+        groupName: "Furniture",
+        route: "furniture",
+        group: [
+            {
+                name: "Shopping Cart",
+                designer: "Kurtis Wiun",
+                inHouse: true,
+                materials: "Cold Rolled Steel Tube, Steel Mesh, Maple, Powder Coat, Sheep Skin",
+                text: [
+                    `Shopping Cart is a Stool plays with notions of proportional balance and industrial production methods. Its Stool, and a half proportion 
+                    allows it to stand apart while being functionally more comfortable. Bent steel tubing forms the frame while a gently curved seat made of 
+                    rolled welded mesh cradles the user. All parts of the frame, are subsequently MIG welded, then powder coated a gloss white. The cold and 
+                    simple lines of the metal frame are warmed by light maple handrails coupled with a circular sheep hide.`
+                ],
+                images : [
+                    
+                    { path: "shoppingcart-1.jpg", width: 3, height: 2, side: 'left' },
+                    { path: "shoppingcart-3.jpg", width: 3, height: 4, side: 'right' },
+                    { path: "shoppingcart-2.jpg", width: 3, height: 2, side: 'left' },
+                    
+                    
+                ]
+            },
+            {
+                name: "Slope",
+                designer: "Kurtis Wiun",
+                inHouse: true,
+                materials: "Maple, Polished Aluminum, Laquer",
+                text: [
+                    `Slope is a side table inspired by the work of Konstantin Grcic. It is constructed of maple, polished aluminum accents, and finished lacquer. 
+                    Aesthetically, the table plays with the notions of support and weight with its elegant front support and heavy rear tapered dowel stack, allowing 
+                    it to change its appearance depending on the angle of viewing. Its clean lines give it a minimalist feel, yet the dowels texture adds a pop of fun
+                    to the design.`
+                ],
+                images : [
+                    { path: "slope-1.jpg", width: 3, height: 2, side: 'left' },
+                    { path: "slope-2.jpg", width: 3, height: 2, side: 'right' },
+                    { path: "slope-3.jpg", width: 3, height: 2, side: 'left' },
+                    { path: "slope-4.jpg", width: 3, height: 2, side: 'right' },
+                ]
+            },
+            {
+                name: "Hang",
+                designer: "Kurtis Wiun",
+                inHouse: true,
+                materials: "Sand Blasted Square AL Tube, Sunbrella Fabric, Stainless Steel Rod, Baltic Birch",
+                text: [
+                    `Hang is a plant stand shelving system designed for mass production and flat packing in mind; built on a modular platform allowing for any combination
+                    of shelves and baskets by the swapping of parts. Connectors are cast out of resin, square sandblasted aluminum tube is used throughout allowing for fast finishing.
+                    Baskets are made from a heavy-duty outdoor fabric that is then laser cut to transform it into a basket.`
+                ],
+                images : [
+                    
+                    { path: "hang-1.jpg", width: 3, height: 6, side: 'left' },
+                    { path: "hang-2.jpg", width: 3, height: 2, side: 'right' },
+                    { path: "hang-3.jpg", width: 3, height: 2, side: 'right' },
+                    
+                ]
+            },
+            {
+                name: "Form Study",
+                designer: "Kurtis Wiun",
+                inHouse: true,
+                materials: "S.P.F.",               
+                text: [
+                    `The focus of this exploration was form not function. This chair was fabricated using leftover laminated SPF material from Western Archrib.`
+                ],
+                images : [
+                    { path: "form-1.jpg", width: 3, height: 4, side: 'left' },
+                    { path: "form-2.jpg", width: 3, height: 4, side: 'right' },
+                ]
+            },
+            {
+                name: "Stretch",
+                designer: "Kurtis Wiun",
+                inHouse: true,
+                materials: "Baltic Birch, Bungie, Acrylic",                
+                text: [
+                    `Stretch is an interactive and adaptive shelf meant to grow with your child. Stretch allows children to build their own shelf with interchangeable parts; 
+                    elastic cord is wrapped around posts by the user allowing them to create their own path where objects are suspended.`,
+                    `All posts are threaded allowing for the removal and addition of posts as well as the opportunity to interchange the posts for 1 of 3 sizes, this aids with storage of large
+                    or small objects. Sets of colored disks are provided allowing your child to personalize their shelf. Two lengths of cord are also provided, for flexibility`
+                ],
+                images : [
+                    { path: "stretch-1.jpg", width: 3, height: 4, side: 'left' },
+                    { path: "stretch-2.jpg", width: 3, height: 4, side: 'right' },
+                ]
+            },
+            {
+                name: "Build-O-Bench",
+                designer: "Thomas Perl & Kurtis Wiun",
+                inHouse: true,
+                materials: "Powder Coated Tube Steel, Sunbrella Fabric, Stainless Steel Hardware",
+                text: [
+                    `To begin our design process for the Benchmarks competition, we created guiding pillars, the pillars were formulated from the needs and wants set forth by
+                    K-days and our secondary research. We explored the pillars through pages of hand-sketched ideation, later refining them in CAD, and then proceeding to render
+                    them. Below are the pillars and how we fulfilled them:`,
+                    [
+                      `Portability: Can be disassembled for storage, has no parts over 15 pounds, and has limited fasteners.`,
+                      `Durability: Powder-coated steel, durable and easy to recoat. Durable and breathable Sunbrella fabric.`,
+                      `Sustainability (economic, social, enviro): Assembled from materials commonly used in local industry. Interchangeable fabric allows expanded use cases. Seat
+                      height of 18” meets A.D.A. standards. Raised handles serve as an aid for mobility-impaired users, they also double as a back rest for the end seats.`,
+                      `Materiality: Tube steel is featured throughout, refeencing its broad use in rides on the Midway, the bright tube steel also references the bright lights that cover
+                      the Midway. Bright Sunbrella fabric brings notions of “The Big Top” into our design, giving it the classic carnival aesthetic.`,
+                      `Assembly: The assembly and disassembly of the Build O-Bench is meant to emulate that of the Midway rides themselves, breeding a similar aesthetic.`,
+                      `Color: The range of color pallets is endless, with powder coating allowing for the possibility to emulate the diversity of colors seen throughout tents and rides at K-Days.`
+                    ]
+                ],
+                images : [
+                    { path: "build-o-bench-1.jpg", width: 4, height: 3, side: 'left' },
+                    { path: "build-o-bench-2.jpg", width: 2, height: 2, side: 'left' },
+                    { path: "build-o-bench-3.jpg", width: 2, height: 2, side: 'right', start: 4 },
+                    { path: "build-o-bench-4.jpg", width: 2, height: 2, side: 'right', start: 6},
+                    { path: "build-o-bench-5.jpg", width: 6, height: 2, side: 'left' },
+                ]
+            }
+        ]
+        
     }
 ]

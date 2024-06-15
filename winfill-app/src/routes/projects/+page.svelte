@@ -2,7 +2,6 @@
     import { projectGroups } from './data';
     import ProjectTile from '../../components/project-tile.svelte';
     import ProjectCategory from '../../components/project-category.svelte';
-    import { imagePath } from '$lib/project-consts';
 
 </script>
 
@@ -19,6 +18,6 @@
 {#each projectGroups as section}
     <ProjectCategory name={section.name} id={section.id} text={section.text} numImages={section.projects.length} imagesPerRow={section.imagesPerRow}/>
     {#each section.projects as project, i}
-        <ProjectTile alt={project.alt} source={imagePath+project.source} route={project.route} imagesPerRow={section.imagesPerRow} index={i} />
+        <ProjectTile alt={project.alt} source={project.source} route={project.route} imagesPerRow={section.imagesPerRow} index={i} />
     {/each}
 {/each}

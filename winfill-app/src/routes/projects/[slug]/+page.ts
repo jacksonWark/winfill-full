@@ -11,7 +11,9 @@ export function entries() {
         { slug: 'inglewood-triplex' },
         { slug: 'strathearn' },
         { slug: 'allendale' },
-        { slug: 'small-project' },
+        { slug: 'lets-play' },
+        { slug: 'concrete' },
+        { slug: 'furniture' },
 	];
 }
 
