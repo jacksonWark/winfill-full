@@ -1,6 +1,39 @@
 <script lang="ts">
+    import type { EventHandler } from "svelte/elements";
     import Paragraph from "../../components/paragraph.svelte";
     import ProjectTile from "../../components/project-tile.svelte";
+    
+    //https://us-central1-winfill-373723.cloudfunctions.net/contact-form
+    //https://contact-form-puowesrjpa-uc.a.run.app
+
+    const handleSubmit: EventHandler<SubmitEvent, HTMLFormElement> = (e) => {
+		// getting the action url
+		const ACTION_URL = e.currentTarget.action;
+
+        let formElements = (e.currentTarget as HTMLFormElement).elements;
+        let payload = {
+            email: (formElements[0] as HTMLInputElement).value, 
+            name: (formElements[1] as HTMLInputElement).value, 
+            message: (formElements[2] as HTMLInputElement).value
+        };
+
+        let data = new FormData();
+        data.append( "json", JSON.stringify( payload ) );
+        
+        let myHeaders = new Headers({
+            "Content-Type": "application/json"
+        });
+
+        fetch(ACTION_URL, {
+            method: 'POST',
+            body: data,
+            headers : myHeaders,
+            mode: "cors",
+            credentials: "omit"
+        })
+        .then(function(res){ return res.json(); })
+        .then(function(data){ alert( JSON.stringify( data ) ) })			
+	}
 
 </script>
 
@@ -42,22 +75,22 @@
     </div>
 
     <div class="w-full">
-        <form class="bg-white grid md:grid-cols-2 gap-6">
+        <form class="bg-white grid md:grid-cols-2 gap-6" id="contactForm" action="http://localhost:8080/" on:submit|preventDefault={handleSubmit}>
           <div class="flex flex-row justify-start items-center col-span-2 md:col-span-1">
             <label class="inline text-sm font-bold mr-2" for="email">Email</label>
-            <input class="inline shadow appearance-none w-full py-1 px-2 leading-tight focus:outline-none focus:border" id="email" type="email">
+            <input class="inline shadow appearance-none w-full py-1 px-2 leading-tight focus:outline-none focus:border" id="email" type="email" name="email">
           </div>
           <div class="flex flex-row justify-start items-center col-span-2 md:col-span-1">
             <label class="inline text-sm font-bold mr-2 align-middle" for="name">Name</label>
-            <input class="inline shadow appearance-none w-full py-1 px-2 leading-tight focus:outline-none focus:border" id="name" type="text">
+            <input class="inline shadow appearance-none w-full py-1 px-2 leading-tight focus:outline-none focus:border" id="name" type="text" name="name">
           </div>
           <div class="col-span-2">
             <label class="block text-sm font-bold mb-2" for="message">Message</label>
-            <textarea class="shadow appearance-none w-full h-32 py-1 px-2 leading-tight focus:outline-none focus:border" id="message"></textarea>
+            <textarea class="shadow appearance-none w-full h-32 py-1 px-2 leading-tight focus:outline-none focus:border" id="message" name="message"></textarea>
           </div>
           <div class="flex justify-end col-span-2 items-center">
             <p class='mr-6' id='status'></p>
-            <button class="bg-orange hover:text-black text-white font-bold py-1 px-2 focus:outline-none focus:shadow-outline" type="button">Submit</button>
+            <input class="bg-orange hover:text-black text-white font-bold py-1 px-2 focus:outline-none focus:shadow-outline" type="submit" value="Submit"/>
           </div>
         </form>
     </div>

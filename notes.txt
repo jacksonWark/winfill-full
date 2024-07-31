@@ -1,2 +1,21 @@
 1. Stack project image on tablet size like mobile
 
+
+
+FURNITURE 
+
+96 requests | 8.4 kB transferred | 50.0 MB resources | Finish: 399 ms | DOMContentLoaded: 208 ms | Load: 243 ms
+96 requests | 7.4 kB transferred | 6.3 MB resources | Finish: 188 ms | DOMContentLoaded: 28 ms | Load: 59 ms
+
+
+LETS PLAY
+
+81 requests | 6.7 kB transferred | 9.2 MB resources | Finish: 190 ms | DOMContentLoaded: 34 ms | Load: 68 ms
+82 requests | 905 kB transferred | 2.4 MB resources | Finish: 213 ms | DOMContentLoaded: 27 ms | Load: 60 ms
+
+CONCRETE
+
+88 requests | 737 kB transferred | 55.7 MB resources | Finish: 260 ms | DOMContentLoaded: 28 ms | Load: 69 ms
+88 requests | 22.9 kB transferred | 7.4 MB resources | Finish: 197 ms | DOMContentLoaded: 28 ms | Load: 64 ms
+
+

@@ -8,7 +8,7 @@ export const projectGroups: ProjectGroups = [
         imagesPerRow: 2,
         projects: [
             { source: "BoxHouse.webp", route: "box-house", alt: "Box House" },
-            { source: "PointyHouse_2.jpg", route: "pointy-house", alt: "Pointy House" },
+            { source: "PointyHouse_2.webp", route: "pointy-house", alt: "Pointy House" },
             { source: "Husky.webp", route: "husky", alt: "Husky" },
             { source: "Goliath.webp", route: "goliath", alt: "Goliath" },
             { source: "AAA.webp", route: "aaa", alt: "AAA" },
@@ -393,16 +393,16 @@ export const projects: MixedProjects = [
                     work translates to superior, timely, and cost-effective architectural concrete.`
                 ],
                 images : [
-                    { path: "concrete-1.jpg", width: 3, height: 2, side: 'left' },
-                    { path: "concrete-2.jpg", width: 3, height: 2, side: 'right' },
-                    { path: "concrete-3.jpg", width: 3, height: 2, side: 'left' },
-                    { path: "concrete-4.jpg", width: 3, height: 2, side: 'right' },
-                    { path: "concrete-5.jpg", width: 3, height: 2, side: 'left' },
-                    { path: "concrete-6.jpg", width: 3, height: 2, side: 'right' },
-                    { path: "concrete-7.jpg", width: 3, height: 2, side: 'left' },
-                    { path: "concrete-8.HEIC", width: 3, height: 2, side: 'right' },
-                    { path: "concrete-9.HEIC", width: 3, height: 2, side: 'left' },
-                    { path: "concrete-10.HEIC", width: 3, height: 2, side: 'right' }
+                    { path: "concrete-1.webp", width: 3, height: 2, side: 'left' },
+                    { path: "concrete-2.webp", width: 3, height: 2, side: 'right' },
+                    { path: "concrete-3.webp", width: 3, height: 2, side: 'left' },
+                    { path: "concrete-4.webp", width: 3, height: 2, side: 'right' },
+                    { path: "concrete-5.webp", width: 3, height: 2, side: 'left' },
+                    { path: "concrete-6.webp", width: 3, height: 2, side: 'right' },
+                    { path: "concrete-7.webp", width: 3, height: 2, side: 'left' },
+                    { path: "concrete-8.webp", width: 3, height: 2, side: 'right' },
+                    { path: "concrete-9.webp", width: 3, height: 2, side: 'left' },
+                    { path: "concrete-10.webp", width: 3, height: 2, side: 'right' }
                 ]
             }
         ]
@@ -424,9 +424,9 @@ export const projects: MixedProjects = [
                 ],
                 images : [
                     
-                    { path: "shoppingcart-1.jpg", width: 3, height: 2, side: 'left' },
-                    { path: "shoppingcart-3.jpg", width: 3, height: 4, side: 'right' },
-                    { path: "shoppingcart-2.jpg", width: 3, height: 2, side: 'left' },
+                    { path: "shoppingcart-1.webp", width: 3, height: 2, side: 'left' },
+                    { path: "shoppingcart-3.webp", width: 3, height: 4, side: 'right' },
+                    { path: "shoppingcart-2.webp", width: 3, height: 2, side: 'left' },
                     
                     
                 ]
@@ -443,10 +443,10 @@ export const projects: MixedProjects = [
                     to the design.`
                 ],
                 images : [
-                    { path: "slope-1.jpg", width: 3, height: 2, side: 'left' },
-                    { path: "slope-2.jpg", width: 3, height: 2, side: 'right' },
-                    { path: "slope-3.jpg", width: 3, height: 2, side: 'left' },
-                    { path: "slope-4.jpg", width: 3, height: 2, side: 'right' },
+                    { path: "slope-1.webp", width: 3, height: 2, side: 'left' },
+                    { path: "slope-2.webp", width: 3, height: 2, side: 'right' },
+                    { path: "slope-3.webp", width: 3, height: 2, side: 'left' },
+                    { path: "slope-4.webp", width: 3, height: 2, side: 'right' },
                 ]
             },
             {
@@ -461,9 +461,9 @@ export const projects: MixedProjects = [
                 ],
                 images : [
                     
-                    { path: "hang-1.jpg", width: 3, height: 6, side: 'left' },
-                    { path: "hang-2.jpg", width: 3, height: 2, side: 'right' },
-                    { path: "hang-3.jpg", width: 3, height: 2, side: 'right' },
+                    { path: "hang-1.webp", width: 3, height: 6, side: 'left' },
+                    { path: "hang-2.webp", width: 3, height: 2, side: 'right' },
+                    { path: "hang-3.webp", width: 3, height: 2, side: 'right' },
                     
                 ]
             },
@@ -476,8 +476,8 @@ export const projects: MixedProjects = [
                     `The focus of this exploration was form not function. This chair was fabricated using leftover laminated SPF material from Western Archrib.`
                 ],
                 images : [
-                    { path: "form-1.jpg", width: 3, height: 4, side: 'left' },
-                    { path: "form-2.jpg", width: 3, height: 4, side: 'right' },
+                    { path: "form-1.webp", width: 3, height: 4, side: 'left' },
+                    { path: "form-2.webp", width: 3, height: 4, side: 'right' },
                 ]
             },
             {
@@ -492,8 +492,8 @@ export const projects: MixedProjects = [
                     or small objects. Sets of colored disks are provided allowing your child to personalize their shelf. Two lengths of cord are also provided, for flexibility`
                 ],
                 images : [
-                    { path: "stretch-1.jpg", width: 3, height: 4, side: 'left' },
-                    { path: "stretch-2.jpg", width: 3, height: 4, side: 'right' },
+                    { path: "stretch-1.webp", width: 3, height: 4, side: 'left' },
+                    { path: "stretch-2.webp", width: 3, height: 4, side: 'right' },
                 ]
             },
             {
@@ -517,11 +517,11 @@ export const projects: MixedProjects = [
                     ]
                 ],
                 images : [
-                    { path: "build-o-bench-1.jpg", width: 4, height: 3, side: 'left' },
-                    { path: "build-o-bench-2.jpg", width: 2, height: 2, side: 'left' },
-                    { path: "build-o-bench-3.jpg", width: 2, height: 2, side: 'right', start: 4 },
-                    { path: "build-o-bench-4.jpg", width: 2, height: 2, side: 'right', start: 6},
-                    { path: "build-o-bench-5.jpg", width: 6, height: 2, side: 'left' },
+                    { path: "build-o-bench-1.webp", width: 4, height: 3, side: 'left' },
+                    { path: "build-o-bench-2.webp", width: 2, height: 2, side: 'left' },
+                    { path: "build-o-bench-3.webp", width: 2, height: 2, side: 'right', start: 4 },
+                    { path: "build-o-bench-4.webp", width: 2, height: 2, side: 'right', start: 6},
+                    { path: "build-o-bench-5.webp", width: 6, height: 2, side: 'left' },
                 ]
             }
         ]
