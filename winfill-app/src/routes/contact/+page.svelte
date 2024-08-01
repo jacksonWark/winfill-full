@@ -6,6 +6,13 @@
     //https://us-central1-winfill-373723.cloudfunctions.net/contact-form
     //https://contact-form-puowesrjpa-uc.a.run.app
 
+    function startTimer() {
+		setTimeout(() => {
+            let statusElement = document.getElementById('status');
+            if (statusElement) {statusElement.innerText = '';}
+		},2000)	
+	}
+
     const handleSubmit: EventHandler<SubmitEvent, HTMLFormElement> = (e) => {
 		// getting the action url
 		const ACTION_URL = e.currentTarget.action;
@@ -26,13 +33,20 @@
 
         fetch(ACTION_URL, {
             method: 'POST',
-            body: data,
+            body: data.get('json'),
             headers : myHeaders,
             mode: "cors",
             credentials: "omit"
         })
-        .then(function(res){ return res.json(); })
-        .then(function(data){ alert( JSON.stringify( data ) ) })			
+        .then(function(res) { 
+            let statusElement = document.getElementById('status');
+            const responseStatus = res.status;
+            if (statusElement) {
+                if (responseStatus == 200) { statusElement.innerText = 'Sent!' }
+                else if ((responseStatus != 204) && (responseStatus != 202)) { statusElement.innerText = 'Failed.' }; 
+                startTimer();
+            }
+        });	
 	}
 
 </script>
@@ -75,7 +89,7 @@
     </div>
 
     <div class="w-full">
-        <form class="bg-white grid md:grid-cols-2 gap-6" id="contactForm" action="http://localhost:8080/" on:submit|preventDefault={handleSubmit}>
+        <form class="bg-white grid md:grid-cols-2 gap-6" id="contactForm" action="https://contact-form-puowesrjpa-uc.a.run.app" on:submit|preventDefault={handleSubmit}>
           <div class="flex flex-row justify-start items-center col-span-2 md:col-span-1">
             <label class="inline text-sm font-bold mr-2" for="email">Email</label>
             <input class="inline shadow appearance-none w-full py-1 px-2 leading-tight focus:outline-none focus:border" id="email" type="email" name="email">
