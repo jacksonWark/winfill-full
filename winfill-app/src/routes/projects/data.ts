@@ -63,10 +63,6 @@ export const projects: MixedProjects = [
             "Currently in permitting, this rear addition will be situated on a beautiful 110-year-old home in the Alberta Ave neighborhood. Winfill will replace an existing addition while bringing the design more in line with the traditional style of the home and improving the exterior envelope to allow the clients to enjoy their home for years to come.",
             "The addition takes styling cues from the rooflines of the facade of the home while interfacing with existing second-floor windows. The interior floor plan was also optimized to the current owners needs. The addition will be clad in traditional cedar painted white, cedar shakes, and burgundy accents."
         ],
-        video: {
-            id: "SLBspkzG9s8",
-            altThumb: "/video/video-screenshot.webp"
-        },
         images: [
             { path: "1.webp", width: 5, height: 4, side: 'left' },
             { path: "5.webp", width: 4, height: 4, side: 'right' },
@@ -92,7 +88,7 @@ export const projects: MixedProjects = [
             "The front façade features a towering brick feature wall complemented by a dark cedar alcove. A 24-foot-tall custom-fabricated steel column perched on top of a custom concrete deck ties together the frontelevation strikingly. Complete with a double-car garage, oversized backyard, and rough grading."
         ],
         video: {
-            id: "SLBspkzG9s8",
+            id: "880fEYFqtMA",
             altThumb: "/video/video-screenshot.webp"
         },
         images: [
@@ -135,8 +131,8 @@ export const projects: MixedProjects = [
         text: [
             "As the neighboring home of the Husky, we pulled design cues from of the Husky but strived to create a unique offering. The custom 2-storey home offers something rare to the lot split market with its stepped design at 34 feet wide vs. the standard 17-foot lot split. 10623 features 3 Bedrooms, 2.5 Bathrooms, an office workspace, and over 2150 sq.ft of high-quality finished living space. The main entertaining level is truly open concept designed. Hence, the main floor functions cyclically, while interior design decisions provide clear breaks in space usage. The main floor showcases engineered white oak flooring, 10\’ ceilings, a gas fireplace, custom metal railings, and a dry bar with a beverage center. The two-tone custom kitchen features a quartz island, upgraded KitchenAid appliances, a gas range, and a sizeable linear pantry with a floor-to-ceiling window. An office workspace overlooking the oversized backyard, complete with custom metal french doors, is located at the back of the house. The upper level features open-rise stairs and spacious secondary bedrooms. The owner\’s suite is accompanied by an oversized ensuite with a custom wet room (waterproofed with the Schluter system and backed up by cement board). The exterior features black James Hardie board and batten, a natural cedar accent nook with seamlessly wrapped cedar on the soffit with a custom fabricated metal column, and a custom concrete deck. Complete with double car garage and rough grading."
         ],
-        video: {
-            id: "SLBspkzG9s8",
+        video: { 
+            id: "7frGnAvON5A",
             altThumb: "/video/video-screenshot.webp"
         },
         images: [
@@ -173,7 +169,7 @@ export const projects: MixedProjects = [
             "Custom 2-storey home, located on a cul-de-sac in Gold Bar. Features 3 Bedrooms, 2.5 Bathrooms, and over 2100 sq.ft of high-quality finished living space. The main entertaining level showcases engineered white oak flooring, 10’ ceilings, a gas fireplace, custom steel railings, and a dry bar/study with a beverage center. The kitchen features a 15\’ quartz island, upgraded KitchenAid appliances, a gas range, and a large pantry with a custom barn door. A generous mudroom with multiple closets and built-in seating is located at the back of the house. The upper level features a large open stairwell with open riser stairs and ample windows to serve as a light well for all levels of the home, including the basement. Spacious secondary bedrooms feature oversized built-in closets. The owner\’s suite is accompanied by an oversized ensuite with a stand-alone tub and built-in shower (waterproofed with the Schluter system and backed up by cement board). The exterior features James Hardie, board and batten, cedar accents with custom metal flashing, and an impressive custom concrete deck/planter. Complete with double car garage and landscaping."
         ],
         video: {
-            id: "SLBspkzG9s8",
+            id: "B4bZSz7c9Ds",
             altThumb: "/video/video-screenshot.webp"
         },
         images: [
@@ -214,7 +210,7 @@ export const projects: MixedProjects = [
             "The exterior features an all cedar front, complete with cedar soffit encompassing the inset second level front deck. The second-storey deck has a custom cedar privacy screen and topless glass railing. A custom concrete deck ties together the front elevation on the ground level for maximum street engagement. Complete with double car garage and rough grading."
         ],
         video: {
-            id: "SLBspkzG9s8",
+            id: "GcUH7OyY8nQ",
             altThumb: "/video/video-screenshot.webp"
         },
         images: [
@@ -241,11 +237,6 @@ export const projects: MixedProjects = [
         text: [
             ""
         ],
-        video: {
-            id: "SLBspkzG9s8",
-            altThumb: "/video/video-screenshot.webp",
-
-        },
         images: [
             { path: "1.webp", width: 5, height: 5, side: 'left' },
             { path: "2.webp", width: 4, height: 5, side: 'right' },
@@ -268,10 +259,6 @@ export const projects: MixedProjects = [
             "Currently under construction, this Four Seasons Room will be situated on a beautiful Midcentury home in the Belaire neighborhood. Large setbacks enforced by the restricted covenant led us to follow the property line on an angled addition to maximize space. The Four Seasons room will contain a swim spa wood-burning fireplace and exercise equipment allowing the owners to enjoy their favorite activities close to home in their forever home.",
             "The addition strived to integrate this unique footprint into the existing home, beginning with a miter glass corner softening the front and ending with access to the backyard for entertainment. Clad in stucco and stone, the addition fits into the pallet while introducing wood gives the addition a warm feeling, blending it into the heavily treed side yard with 10\’ setback."
         ],
-        video: {
-            id: "SLBspkzG9s8",
-            altThumb: "/video/video-screenshot.webp",
-        },
         images: [
             { path: "1.webp", width: 5, height: 5, side: 'left' },
             { path: "3.webp", width: 4, height: 3, side: 'right' },
@@ -300,10 +287,6 @@ export const projects: MixedProjects = [
             "Currently under construction the Inglewood Triplex will feature 6 individual units (above ground and 3 basement suites) totaling 5,299 s.f. of total finished living space. The structure will include 6 kitchens, 6 laundry rooms, 9 bedrooms, and 12 bathrooms. The exterior of this building will feature stucco and cedar accents as well as several skylights, and a complex basement courtyard entryway. Winfill will oversee the project to completion including building a 3-car garage and completing the full landscaping scope.",
             "Although, Winfill did not complete the design for our client on this project we were brought in early in the project development phase as a pre-construction advisor consulting on constructability and providing value engineering suggestions."
         ],
-        video: {
-            id: "SLBspkzG9s8",
-            altThumb: "/video/video-screenshot.webp",
-        },
         images: [
             { path: "1.webp", width: 5, height: 5, side: 'left' },
             { path: "2.webp", width: 4, height: 4, side: 'right' },

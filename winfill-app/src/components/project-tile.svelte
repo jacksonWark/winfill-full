@@ -29,7 +29,7 @@
     </a>
     {:else}
     <div class="block relative">
-        <img src={imagePath+'/empty.webp'} alt={alt} class="w-full border">
+        <img src={imagePath+'empty.webp'} alt={alt} class="w-full border">
         <div class="flex absolute bottom-0 w-full h-8 md:size-full md:top-0 items-center">
             <h1 class="font-bold text-xl text-center w-full">{alt}</h1>
         </div>
