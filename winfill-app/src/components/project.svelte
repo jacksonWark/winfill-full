@@ -21,7 +21,7 @@
 </script>
 
 
-<div class="md:order-1 md:col-span-6 text-xl md:text-2xl">
+<div class="md:order-1 md:col-span-6 text-xl md:text-3xl">
     <p class='text-orange inline mr-2'>Projects:</p><p class="hidden lg:inline"> > {project.category} > </p><p class="inline">{project.name}</p> 
 </div>
 

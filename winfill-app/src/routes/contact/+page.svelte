@@ -54,7 +54,7 @@
 
 
 <div class="col-span-full lg:col-span-2">
-    <div class="w-full text-xl md:text-2xl">
+    <div class="w-full text-xl md:text-3xl">
         <p class='text-orange inline mr-2'>Let's Build</p> 
     </div>
 

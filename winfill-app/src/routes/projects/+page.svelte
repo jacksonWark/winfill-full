@@ -6,7 +6,7 @@
 </script>
 
 
-<div class="md:col-span-4 text-xl md:text-2xl">
+<div class="md:col-span-4 text-xl md:text-3xl">
     <p class='text-orange inline mr-2'>Projects:</p> 
 </div>
 
