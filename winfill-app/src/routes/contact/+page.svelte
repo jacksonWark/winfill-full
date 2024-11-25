@@ -58,10 +58,10 @@
         <p class='text-orange inline mr-2'>Let's Build</p> 
     </div>
 
-    <Paragraph text={`
+    <Paragraph extraStyles="mb-6 md:mb-0" text={`
         We commence each project with a collaborative introduction.
         Our team will personally visit your site (or assist in finding one) and attentively listen to your ideas, all while sharing our insights and creativity.
-        We dedicate time to ideat with you, regardless of the project's scale. 
+        We dedicate time to ideate with you, regardless of the project's scale. 
         Whether it's multi-family developments, custom homes, residential additions, or garages, we have sucessfully constructed them all.
     `}/>
 
