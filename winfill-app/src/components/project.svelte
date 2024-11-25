@@ -69,9 +69,11 @@
 {/if}
 
 {#if project.images}
-    {#each project.images as image, i}
-        <div class={` md:order-last md:col-span-${image.width} md:col-start-${MapSide(image.side, image.start)} md:row-span-${image.height}`}>
-            <img src="{imageFolder+image.path}" alt="{project.name}">
-        </div>
-    {/each}
+<div class="grid col-span-full grid-cols-1 gap-y-12 md:order-7 md:grid-cols-10 md:gap-x-6">
+        {#each project.images as image, i}
+            <div class={`md:order-last md:col-span-${image.width} md:col-start-${MapSide(image.side, image.start)} md:row-span-${image.height}`}>
+                <img draggable="false" class="select-none object-cover size-full " src="{imageFolder+image.path}" alt="{project.name}">
+            </div>
+        {/each}
+    </div>
 {/if}

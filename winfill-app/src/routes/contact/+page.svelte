@@ -88,8 +88,8 @@
         <a href="https://www.instagram.com/winfill_developments/" target="_blank" rel="noopener noreferrer" class="underline decoration-orange hover:text-orange text-right">Instagram</a> 
     </div>
 
-    <div class="w-full">
-        <form class="bg-white grid md:grid-cols-2 gap-6" id="contactForm" action="https://contact-form-puowesrjpa-uc.a.run.app" on:submit|preventDefault={handleSubmit}>
+    <div class="w-full h-full">
+        <form class="bg-white grid md:grid-cols-2 gap-6 h-full" id="contactForm" action="https://contact-form-puowesrjpa-uc.a.run.app" on:submit|preventDefault={handleSubmit}>
           <div class="flex flex-row justify-start items-center col-span-2 md:col-span-1">
             <label class="inline text-sm font-bold mr-2" for="email">Email</label>
             <input class="inline shadow appearance-none w-full py-1 px-2 leading-tight focus:outline-none focus:border" id="email" type="email" name="email">
@@ -100,7 +100,7 @@
           </div>
           <div class="col-span-2">
             <label class="block text-sm font-bold mb-2" for="message">Message</label>
-            <textarea class="shadow appearance-none w-full h-32 py-1 px-2 leading-tight focus:outline-none focus:border" id="message" name="message"></textarea>
+            <textarea class="shadow appearance-none w-full h-40 py-1 px-2 leading-tight focus:outline-none focus:border lg:h-full" id="message" name="message"></textarea>
           </div>
           <div class="flex justify-end col-span-2 items-center">
             <p class='mr-6' id='status'></p>
@@ -112,8 +112,8 @@
 </div>
 
 <div class="col-span-full  flex flex-row justify-center mt-16 lg:mt-0 lg:col-span-1 lg:col-start-9">
-    <div class="w-1/2 md:w-1/4 lg:w-full relative">
-        <img src="/images/AB-icon.webp" alt="winfill">
-        <div class="absolute text-nowrap -right-6 top-0 w-6 rotate-90 lg:text-lg font-bold">Proudly Serving Alberta</div>
+    <div class="w-1/2 md:w-1/4 lg:w-full  relative">
+        <img src="/images/Alberta.webp" alt="winfill">
+        <div class="absolute text-nowrap -right-8 top-0 w-6 rotate-90 text-2xl md:text-md lg:text-lg font-bold">Proudly Serving Alberta</div>
     </div>
 </div>
