@@ -1,5 +1,14 @@
 <script lang="ts">
   import Paragraph from "../../components/paragraph.svelte";
+  import Carousel from "../../components/carousel.svelte";
+
+  let carouselImages = [
+    {path: "/images/process/assess.webp", alt: "assess"},
+    {path: "/images/process/design.webp", alt: "assess"},
+    {path: "/images/process/build-1.webp", alt: "assess"},
+    {path: "/images/process/build-2.webp", alt: "assess"},
+    {path: "/images/process/build-3.webp", alt: "assess"}
+  ]
 </script>
 
 <div class="md:col-span-4 text-xl md:text-3xl">
@@ -11,7 +20,7 @@
   <a href="https://www.instagram.com/winfill_developments/" target="_blank" rel="noopener noreferrer" class="underline decoration-orange hover:text-orange text-right">Instagram</a> 
 </div>
 
-<div class="col-span-full mb-6 md:text-lg xl:col-span-5 xl:text-xl">
+<div class="col-span-full mb-6 md:text-lg xl:col-span-6 xl:text-xl">
   <h1 class="text-xl  md:text-2xl lg:text-3xl ">Assess:</h1>
 
   <Paragraph text={`
@@ -26,11 +35,11 @@
   `}/>
 </div>
 
-<div class="col-span-full xl:col-span-4 xl:col-start-7">
+<div class="col-span-full xl:col-span-3 xl:col-start-8">
   <img src="/images/process/assess.webp" alt="winfill developments">
 </div> 
 
-<div class="col-span-full mb-6 md:order-6 md:text-lg xl:col-span-5 xl:col-start-6 xl:text-xl">
+<div class="col-span-full mb-6 md:order-6 md:text-lg xl:col-span-6 xl:col-start-5 xl:text-xl">
   <h1 class="text-xl  md:text-2xl lg:text-3xl ">Design:</h1>
 
   <Paragraph text={`
@@ -54,11 +63,11 @@
   `} extraStyles={"my-4 lg:mb-8"} />
 </div>
 
-<div class="col-span-full md:order-5 xl:col-span-4 xl:col-start-1">
+<div class="col-span-full md:order-5 xl:col-span-3 xl:col-start-1">
   <img src="/images/process/design.webp" alt="winfill developments">
 </div> 
 
-<div class="col-span-full mb-6 md:order-7 md:row-span-3 md:text-lg xl:col-span-5 xl:text-xl">
+<div class="col-span-full mb-6 md:order-7 md:row-span-3 md:text-lg xl:col-span-6 xl:text-xl">
   <h1 class="text-xl  md:text-2xl lg:text-3xl ">Build:</h1>
 
   <Paragraph text={`
@@ -132,14 +141,17 @@
   `} extraStyles={"mb-4 lg:mb-8"} />  
 </div>
 
-<div class="col-span-full md:order-8 xl:col-span-4 xl:col-start-7">
+<div class="col-span-full md:order-8 xl:col-span-3 xl:col-start-8">
   <img src="/images/process/build-1.webp" alt="winfill developments">
 </div> 
 
-<div class="col-span-full md:order-9 xl:col-span-4 xl:col-start-7">
+<div class="col-span-full md:order-9 xl:col-span-3 xl:col-start-8">
   <img src="/images/process/build-2.webp" alt="winfill developments">
 </div> 
 
-<div class="col-span-full md:order-10 xl:col-span-4 xl:col-start-7">
+<div class="col-span-full md:order-10 xl:col-span-3 xl:col-start-8">
   <img src="/images/process/build-3.webp" alt="winfill developments">
 </div> 
+
+
+<Carousel images={carouselImages} />

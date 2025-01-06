@@ -3,7 +3,7 @@
     import Youtube from "./youtube/Youtube.svelte";
     import { imagePath } from "$lib/project-consts"
     import type { Project } from '$lib/project-types';
-    import { IsBulletList } from "$lib/project-types";
+    import { IsBulletList, IsPathList } from "$lib/project-types";
     
     //Props
     export let project: Project;
@@ -22,7 +22,7 @@
 
 
 <div class="md:order-1 md:col-span-6 text-xl md:text-3xl">
-    <p class='text-orange inline mr-2'>Projects:</p><p class="hidden lg:inline"> > {project.category} > </p><p class="inline">{project.name}</p> 
+    <p class='text-orange inline mr-2'>Projects:</p><p class="inline">{project.name}</p> 
 </div>
 
 <div class="hidden justify-self-end md:order-2 md:flex md:flex-row md:col-span-4 md:text-md lg:col-span-4 lg:text-2xl">
@@ -32,8 +32,8 @@
 
 <div class="col-span-full text-sm md:order-3 md:text-md">
     {#if project.location}<h1 class="font-bold pr-1">{project.location}</h1>{/if}
-    {#if project.started}<div><h1 class="font-bold pr-1 inline">Year:</h1><h1 class="inline">{project.started}, {project.status}</h1></div>{/if}
-    {#if project.designer}<div><h1 class="font-bold pr-1 inline">{#if project.inHouse}In House {/if}Design by: </h1><h1 class="inline">{project.designer}</h1></div>{/if}
+    {#if project.started}<div><h1 class="font-bold pr-1 inline">Year: {project.started}, {project.status}</h1></div>{/if}
+    {#if project.designer}<div><h1 class="font-bold pr-1 inline">{#if project.inHouse}In House {/if}Design by: {project.designer}</h1></div>{/if}
 </div>
 
 {#if project.conceptImage}
@@ -69,11 +69,19 @@
 {/if}
 
 {#if project.images}
-<div class="grid col-span-full grid-cols-1 gap-y-12 md:order-7 md:grid-cols-10 md:gap-x-6">
+<div class="grid col-span-full grid-cols-1 gap-y-12 md:order-7 md:grid-cols-10 md:gap-x-0">
         {#each project.images as image, i}
-            <div class={`md:order-last md:col-span-${image.width} md:col-start-${MapSide(image.side, image.start)} md:row-span-${image.height}`}>
-                <img draggable="false" class="select-none object-cover size-full " src="{imageFolder+image.path}" alt="{project.name}">
-            </div>
+            {#if IsPathList(image.path)}
+                <div class={`flex flex-row pl-10 md:order-last md:col-span-${image.width} md:col-start-${MapSide(image.side, image.start)} md:row-span-${image.height}`}>
+                    {#each image.path as onePath, j}
+                        <img draggable="false" class="select-none object-cover -translate-x-10 w-1/{image.path.length} {j==image.path.length-1?"":"mr-"+ 10/(image.path.length - 1)}" src="{imageFolder+onePath}" alt="{project.name}">
+                    {/each}
+                </div>
+            {:else}
+                <div class={`md:order-last md:col-span-${image.width} md:col-start-${MapSide(image.side, image.start)} md:row-span-${image.height}`}>
+                    <img draggable="false" class="select-none object-cover size-full " src="{imageFolder+image.path}" alt="{project.name}">
+                </div>
+            {/if}
         {/each}
     </div>
 {/if}

@@ -22,6 +22,8 @@
 
   export let id = '';
   export let altThumb = '';
+  export let mute = false;
+  export let autoplay = false;
 
   let title = "";
   let width = 0;
@@ -38,7 +40,8 @@
     height = videoInfo?.height;
   });
 
-  let play = false;
+  //let play = false;
+  let play = autoplay;
   const isCustomPlayButton = $$slots.default;
   const isCustomThumbnail = $$slots.thumbnail;
 </script>
@@ -49,7 +52,7 @@
   {title}
 >
   {#if play}
-    <Iframe {id} {title} />
+    <Iframe {id} {title} {mute}/>
   {:else}
     {#if isCustomThumbnail}
       <slot name="thumbnail" />

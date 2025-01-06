@@ -39,6 +39,8 @@
   <img src="/images/about/winfill-bros.webp" alt="winfill developments">
 </div> 
 
+<!--
+
 <div class="col-span-full mt-4 lg:mt-8">
   <h1 class="text-xl md:text-2xl lg:text-3xl ">Testimonials:</h1>
 </div>
@@ -73,3 +75,5 @@
 <div class="col-span-full xl:col-span-4 xl:col-start-7">
   <img src="/images/about/interior.webp" alt="winfill developments">
 </div> 
+
+-->

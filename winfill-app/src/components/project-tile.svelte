@@ -24,7 +24,7 @@
     <a href={route} class="block relative" on:mouseenter={()=>{active = true}} on:mouseleave={()=>{active = false}}>
         <img src={imagePath+source} alt={alt} class="w-full">
         <div class={(active == true ? "md:flex" : "md:hidden") + " absolute bottom-0 w-full h-8 md:size-full md:top-0 items-center transition backdrop-brightness-50"}>
-            <h1 class="text-orange font-bold text-xl text-center w-full">{alt}</h1>
+            <h1 class="text-orange font-bold text-3xl text-center w-full">{alt}</h1>
         </div>
     </a>
     {:else}

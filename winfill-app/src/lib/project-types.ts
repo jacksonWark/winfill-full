@@ -7,7 +7,7 @@ export type ProjectGroups = {
 }[];
 
 export type ImageGallery = {
-    path: string; 
+    path: string | string[]; 
     width: number; 
     height: number; 
     side: 'left' | 'right'; 
@@ -19,6 +19,10 @@ export type BulletList = string[];
 
 export function IsBulletList(textDescriptionElement: string | BulletList): textDescriptionElement is BulletList {
     return Array.isArray(textDescriptionElement as BulletList) === true;
+}
+
+export function IsPathList(path: string | string []): path is string[] { 
+    return Array.isArray(path as string[]) === true;
 }
 
 export type Project = {

@@ -11,8 +11,7 @@ export const projectGroups: ProjectGroups = [
             { source: "PointyHouse_2.webp", route: "pointy-house", alt: "Pointy House" },
             { source: "Husky.webp", route: "husky", alt: "Husky" },
             { source: "Goliath.webp", route: "goliath", alt: "Goliath" },
-            { source: "AAA.webp", route: "aaa", alt: "AAA" },
-            { source: "Wedge.webp", route: "wedge", alt: "Wedge" },
+            
             { source: "RiverdaleResidence.webp", route: "riverdale-residence", alt: "Riverdale Residence" }
         ]
     },
@@ -22,7 +21,17 @@ export const projectGroups: ProjectGroups = [
         text: "Building Multi-Family developments where every detail is designed and built with the tenant and owner in mind, we create spaces that foster connections and turn neighbours into lifelong friends.",
         imagesPerRow: 2,
         projects: [
-            { source: "Triplex.webp", route: "inglewood-triplex", alt: "Inglewood Triplex" }
+            { source: "inglewood-triplex/01.webp", route: "inglewood-triplex", alt: "Inglewood Triplex" }
+        ]
+    },
+    { //Renovations
+        name: "Renovations",
+        id: "renovations",
+        text: "Tailoring existing homes to your needs and wants. We take pride in integrating a cohesive design language into renovations, ensuring harmony between new additions and existing conditions.",
+        imagesPerRow: 2,
+        projects: [
+            { source: "AAA.webp", route: "aaa", alt: "AAA" },
+            { source: "Wedge.webp", route: "wedge", alt: "Wedge" }
         ]
     },
     { //Small Projects
@@ -67,9 +76,9 @@ export const projects: MixedProjects = [
             { path: "1.webp", width: 5, height: 4, side: 'left' },
             { path: "5.webp", width: 4, height: 4, side: 'right' },
             { path: "3.webp", width: 5, height: 5, side: 'left' },
-            { path: "6.webp", width: 2, height: 1, side: 'right' },
-            { path: "4.webp", width: 2, height: 1, side: 'right', start: 9 },
-            { path: "2.webp", width: 4, height: 3, side: 'right' }
+            { path: ["6.webp","4.webp"], width: 4, height: 1, side: 'right' },
+            //{ path: "4.webp", width: 2, height: 1, side: 'right', start: 9 },
+            { path: "2.webp", width: 4, height: 4, side: 'right' }
         ]
     },
     { //Box House
@@ -94,16 +103,16 @@ export const projects: MixedProjects = [
         images: [
             { path: "e1.webp", width: 5, height: 6, side: 'left' },
             { path: "e2.webp", width: 4, height: 3, side: 'right' },
-            { path: "e3.webp", width: 2, height: 2, side: 'right' },
-            { path: "e4.webp", width: 2, height: 2, side: 'right', start: 9 },
+            { path: ["e3.webp","e4.webp"], width: 4, height: 2, side: 'right' },
+            //{ path: "e4.webp", width: 2, height: 2, side: 'right', start: 9 },
             { path: "e6.webp", width: 4, height: 5, side: 'right' },
             { path: "e5.webp", width: 5, height: 5, side: 'left' },
             { path: "e7.webp", width: 4, height: 3, side: 'right' },
             { path: "yeg.webp", width: 5, height: 4, side: 'left' },
             { path: "e9.webp", width: 4, height: 4, side: 'right' },
             { path: "e8.webp", width: 5, height: 4, side: 'left' },
-            { path: "e10.webp", width: 2, height: 3, side: 'right' },
-            { path: "e11.webp", width: 2, height: 3, side: 'right', start: 9 },
+            { path: ["e10.webp","e11.webp"], width: 4, height: 3, side: 'right' },
+            //{ path: "e11.webp", width: 2, height: 3, side: 'right', start: 9 },
             { path: "i1.webp", width: 5, height: 4, side: 'left' },
             { path: "i2.webp", width: 4, height: 3, side: 'right' },
             { path: "i3.webp", width: 5, height: 4, side: 'left' },
@@ -214,14 +223,35 @@ export const projects: MixedProjects = [
             altThumb: "/video/video-screenshot.webp"
         },
         images: [
-            { path: "1.webp", width: 5, height: 6, side: 'left' },
+            { path: "Pointy-1.webp", width: 5, height: 6, side: 'left' },
+            { path: "PointyHouse_2.webp", width: 4, height: 4, side: 'right' },
             { path: "2.webp", width: 4, height: 3, side: 'right' },
-            { path: "3.webp", width: 4, height: 3, side: 'right' },
             { path: "4.webp", width: 5, height: 4, side: 'left' },
-            { path: "5.webp", width: 2, height: 3, side: 'right' },
-            { path: "6.webp", width: 2, height: 3, side: 'right', start: 9 },
-            { path: "8.webp", width: 4, height: 5, side: 'right' },
-            { path: "7.webp", width: 5, height: 4, side: 'left' }
+            { path: "_DSC1250.webp", width: 4, height: 3, side: 'right' },
+            { path: "_DSC1244.webp", width: 5, height: 7, side: 'left' },
+            { path: "_DSC1239.webp", width: 4, height: 3, side: 'right' },
+
+            { path: "_DSC1247.webp", width: 4, height: 3, side: 'right' },
+            { path: "_DSC1238.webp", width: 4, height: 6, side: 'right' },
+            { path: "IMG_8849.webp", width: 5, height: 4, side: 'left' },
+            
+            { path: "_DSC1214.webp", width: 5, height: 4, side: 'left' },
+            { path: ["_DSC1353.webp","_DSC1256.webp"], width: 4, height: 3, side: 'right' },
+            { path: "_DSC1192.webp", width: 5, height: 7, side: 'left' },
+            { path: "_DSC1228.webp", width: 4, height: 5, side: 'right' },
+            { path: ["IMG_8823.webp","_DSC1196.webp"], width: 4, height: 3, side: 'right' },
+            { path: "_DSC1224.webp", width: 5, height: 4, side: 'left' },
+            { path: "_DSC1368.webp", width: 4, height: 5, side: 'right' },
+            { path: "IMG_8895.webp", width: 5, height: 4, side: 'left' },
+            { path: "IMG_8907.webp", width: 4, height: 3, side: 'right' },
+            { path: "_DSC1268.webp", width: 5, height: 4, side: 'left' },
+            { path: "_DSC1283.webp", width: 4, height: 6, side: 'right' },
+            { path: "IMG_8948.webp", width: 5, height: 4, side: 'left' },
+            { path: ["_DSC1362.webp","_DSC1360.webp"], width: 4, height: 2, side: 'right' },
+            { path: "_DSC1273.webp", width: 5, height: 6, side: 'left' },
+            
+            { path: "_DSC1359.webp", width: 4, height: 3, side: 'right' },
+            { path: "IMG_8974.webp", width: 4, height: 3, side: 'right' }
         ]
     },
     { //Riverdale Residence
@@ -265,11 +295,11 @@ export const projects: MixedProjects = [
             { path: "4.webp", width: 4, height: 4, side: 'right' },
             { path: "6.webp", width: 5, height: 4, side: 'left' },
             { path: "7.webp", width: 4, height: 4, side: 'right' },
-            { path: "5.webp", width: 5, height: 5, side: 'left' },
-            { path: "8.webp", width: 2, height: 2, side: 'right' },
-            { path: "12.webp", width: 2, height: 2, side: 'right', start: 9 },
+            { path: "5.webp", width: 5, height: 4, side: 'left' },
+            { path: ["8.webp","12.webp"], width: 4, height: 2, side: 'right' },
+            //{ path: "12.webp", width: 2, height: 2, side: 'right', start: 9 },
             { path: "11.webp", width: 5, height: 6, side: 'left' },
-            { path: "9.webp", width: 4, height: 5, side: 'right' }
+            { path: "9.webp", width: 4, height: 4, side: 'right' }
         ]
     },
     // Multi Family
@@ -278,7 +308,7 @@ export const projects: MixedProjects = [
         category: "Multi-Family",
         location: "Inglewood, Edmonton, AB",
         started: 2024,
-        status: "Complete",
+        status: "Completed",
         designer: "Thomas Perl",
         inHouse: false,
         route: "inglewood-triplex",
@@ -287,13 +317,36 @@ export const projects: MixedProjects = [
             "The Inglewood Triplex features 6 individual units above ground and 3 basement suites, totaling 5,299 s.f. of total finished living space. The structure includes 6 kitchens, 6 laundry rooms, 9 bedrooms, and 12 bathrooms. The exterior of the building features stucco and cedar accents as well as three skylights, and a complex basement courtyard entryway. Winfill oversaw the construction a 3-car garage and the full landscaping scope. This project featured the first interior lot Low Impact Development constructed in the City of Edmonton.",
             "Although, Winfill did not complete the design for our client on this project we were brought in early in the project development phase as a pre-construction advisor consulting on constructability and providing value engineering suggestions."
         ],
+        video: {
+            id: "Wo-FxMZgqH0",
+            altThumb: "/video/video-screenshot.webp" 
+        },
         images: [
-            { path: "1.webp", width: 5, height: 5, side: 'left' },
-            { path: "2.webp", width: 4, height: 4, side: 'right' },
-            { path: "4.webp", width: 4, height: 5, side: 'right' },
-            { path: "3.webp", width: 5, height: 4, side: 'left' },
-            { path: "5.webp", width: 5, height: 4, side: 'left' },
-            { path: "6.webp", width: 4, height: 5, side: 'right' }
+            { path: "01.webp", width: 5, height: 5, side: 'left' },
+            { path: "02.webp", width: 4, height: 3, side: 'right' },
+            { path: "03.webp", width: 4, height: 4, side: 'right' },
+            { path: "04.webp", width: 5, height: 4, side: 'left' },
+            { path: "05.webp", width: 4, height: 5, side: 'right' },
+            { path: "06.webp", width: 5, height: 4, side: 'left' },
+            { path: "09.webp", width: 4, height: 4, side: 'right' },
+            { path: ["07.webp","08.webp"], width: 5, height: 2, side: 'left' },
+           // { path: "08.webp", width: 3, height: 4, side: 'left', start: 4 },
+            { path: "10.webp", width: 5, height: 4, side: 'left' }, 
+            { path: "11.webp", width: 4, height: 5, side: 'right' },
+            
+            { path: "12.webp", width: 5, height: 4, side: 'left' },
+            { path: "13.webp", width: 4, height: 5, side: 'right' },
+            { path: "14.webp", width: 5, height: 6, side: 'left' },
+            { path: "15.webp", width: 4, height: 3, side: 'right' },
+            
+            { path: "16.webp", width: 5, height: 4, side: 'left' },
+            { path: "17.webp", width: 4, height: 3, side: 'right' },
+            { path: "18.webp", width: 4, height: 3, side: 'right' },
+            { path: ["19.webp","20.webp"], width: 5, height: 2, side: 'left' },
+            //{ path: "20.webp", width: 2, height: 2, side: 'left', start: 4},
+            
+            { path: "22.webp", width: 5, height: 4, side: 'left' },
+            { path: "21.webp", width: 4, height: 3, side: 'right' },
         ]
     },
     // For Sale
@@ -501,9 +554,9 @@ export const projects: MixedProjects = [
                 ],
                 images : [
                     { path: "build-o-bench-1.webp", width: 4, height: 3, side: 'left' },
-                    { path: "build-o-bench-2.webp", width: 2, height: 2, side: 'left' },
-                    { path: "build-o-bench-3.webp", width: 2, height: 2, side: 'right', start: 4 },
-                    { path: "build-o-bench-4.webp", width: 2, height: 2, side: 'right', start: 6},
+                    { path: ["build-o-bench-2.webp","build-o-bench-3.webp","build-o-bench-4.webp"], width: 6, height: 2, side: 'left' },
+                    //{ path: "build-o-bench-3.webp", width: 2, height: 2, side: 'right', start: 4 },
+                    //{ path: "build-o-bench-4.webp", width: 2, height: 2, side: 'right', start: 6},
                     { path: "build-o-bench-5.webp", width: 6, height: 2, side: 'left' },
                 ]
             }

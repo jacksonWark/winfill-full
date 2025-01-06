@@ -2,7 +2,7 @@
     import Paragraph from "./paragraph.svelte";
     import { imagePath } from "$lib/project-consts"
     import type { ImageGallery, SmallProject, SmallProjects } from '$lib/project-types';
-    import { IsBulletList } from "$lib/project-types";
+    import { IsBulletList, IsPathList } from "$lib/project-types";
     import Image from "./youtube/Image.svelte";
     
     //Props
@@ -60,11 +60,19 @@
     </div>
 
     {#if project.images}
-        <div class={"col-span-full lg:mt-12 lg:grid lg:grid-cols-subgrid lg:gap-6 lg:col-span-7" + (project.images ? ' lg:row-span-' + GetRowSpan(project.images) : '')}>
+        <div class={"col-span-full gap-y-12 lg:mt-12 grid lg:grid-cols-subgrid lg:gap-x-6 lg:col-span-7" + (project.images ? ' lg:row-span-' + GetRowSpan(project.images) : '')}>
         {#each project.images as image, i}
+            {#if IsPathList(image.path)}
+                <div class={`flex flex-row pl-10 mb-6 md:mb-0 md:col-span-full lg:col-span-${image.width} lg:col-start-${MapSide(image.side, image.start)} lg:row-span-${image.height}`}>
+                    {#each image.path as onePath, j}
+                        <img draggable="false" class="select-none object-cover -translate-x-10 w-1/{image.path.length} {j==image.path.length-1?"":"mr-"+ 10/(image.path.length - 1)}" src="{imageFolder+onePath}" alt="{project.name}">
+                    {/each}
+                </div>
+            {:else}
             <div class={`mb-6 md:mb-0 md:col-span-full lg:col-span-${image.width} lg:col-start-${MapSide(image.side, image.start)} lg:row-span-${image.height}`}>
-                <img src="{imageFolder+image.path}" alt="{project.name}">
+                <img draggable="false" class="select-none object-cover" src="{imageFolder+image.path}" alt="{project.name}">
             </div>
+            {/if}
         {/each}
         </div>
     {/if}

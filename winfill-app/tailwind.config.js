@@ -14,6 +14,18 @@ module.exports = {
       pattern: /row-span-.+/,
       variants: ['md','lg']
     },
+    {
+      pattern: /mr-.+/,
+      variants: ['md','lg']
+    },
+    {
+      pattern: /w-.+/,
+      variants: ['md','lg']
+    },
+    {
+      pattern: /w-1\/.+/,
+      variants: ['md','lg']
+    }
   ],
   theme: {
     colors: {

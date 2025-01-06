@@ -1,5 +1,6 @@
 <script>
     import Paragraph from '../components/paragraph.svelte';
+    import Youtube from '../components/youtube/Youtube.svelte';
     const about = 
     `
         <b>About:</b> 
@@ -9,8 +10,9 @@
     `
 </script>
 
-<div class="col-span-1 md:col-span-5  lg:col-span-6 xl:col-span-7 ">
-    <img src='./images/landing-box-house.webp' alt="Box House">
+<div class="col-span-1 md:col-span-5  lg:col-span-6 xl:col-span-7 relative">
+    <Youtube id="GcUH7OyY8nQ" altThumb="/video/video-screenshot.webp" mute={true} autoplay={true}/>
+    <!--<img src='./images/landing-box-house.webp' alt="Box House">-->
 </div>
 <div class="col-span-1 md:col-span-4 md:col-start-7 lg:col-span-3 lg:col-start-8 xl:col-span-2 xl:col-start-9">
     <Paragraph text={about}>
