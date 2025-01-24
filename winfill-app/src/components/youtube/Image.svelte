@@ -6,10 +6,17 @@
 </script>
 
 {#key play}
+  <!-- 
   <img
     src="https://i.ytimg.com/vi/{id}/{altThumb
       ? 'hqdefault'
       : 'maxresdefault'}.jpg"
+    {title}
+    alt="Youtube video: {title}"
+    referrerpolicy="no-referrer"
+  /> -->
+  <img
+    src={altThumb ? altThumb : "https://i.ytimg.com/vi/{id}/maxresdefault.jpg"}
     {title}
     alt="Youtube video: {title}"
     referrerpolicy="no-referrer"

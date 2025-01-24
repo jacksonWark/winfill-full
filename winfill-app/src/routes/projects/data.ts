@@ -98,7 +98,7 @@ export const projects: MixedProjects = [
         ],
         video: {
             id: "880fEYFqtMA",
-            altThumb: "/video/video-screenshot.webp"
+            altThumb: "/images/youtube/box.webp"
         },
         images: [
             { path: "e1.webp", width: 5, height: 6, side: 'left' },
@@ -142,7 +142,7 @@ export const projects: MixedProjects = [
         ],
         video: { 
             id: "7frGnAvON5A",
-            altThumb: "/video/video-screenshot.webp"
+            altThumb: "/images/youtube/goliath.webp"
         },
         images: [
             { path: "1.webp", width: 5, height: 4, side: 'left' },
@@ -179,7 +179,7 @@ export const projects: MixedProjects = [
         ],
         video: {
             id: "B4bZSz7c9Ds",
-            altThumb: "/video/video-screenshot.webp"
+            altThumb: "/images/youtube/husky.webp"
         },
         images: [
             
@@ -220,7 +220,7 @@ export const projects: MixedProjects = [
         ],
         video: {
             id: "GcUH7OyY8nQ",
-            altThumb: "/video/video-screenshot.webp"
+            altThumb: "/images/youtube/pointy.webp"
         },
         images: [
             { path: "Pointy-1.webp", width: 5, height: 6, side: 'left' },
@@ -319,7 +319,7 @@ export const projects: MixedProjects = [
         ],
         video: {
             id: "Wo-FxMZgqH0",
-            altThumb: "/video/video-screenshot.webp" 
+            altThumb: "/images/youtube/triplex.webp" 
         },
         images: [
             { path: "01.webp", width: 5, height: 5, side: 'left' },

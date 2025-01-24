@@ -19,7 +19,7 @@
     <div class="flex flex-nowrap flex-col border-1 border-b relative md:flex-row">
         <div class="flex justify-between flex-row">
             <a class="block" href="/">
-                <img class="w-44 xs:w-36 md:h-14 md:w-min max-w-none" src={base+"/images/logo-top.webp"} alt="Winfill Developments">  
+                <img class="w-96" src={base+"/images/logo-top.webp"} alt="Winfill Developments">  
             </a>
             <button id='menu-toggle' class="block cursor-pointer right-0 top-0 z-50 md:hidden" on:click={(ev)=>{menuOpen = !menuOpen; ev.stopPropagation()}}>
                 <svg class="fill-current text-black-900" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 20 20">
@@ -75,5 +75,5 @@
             </div>
         </div>
     </div>
-    <img class="h-6 w-min md:h-8" src={base+"/images/logo-bottom.webp"} alt="Winfill Developments">
+    <img class="flex-shrink-0 flex-grow-0 w-72" src={base+"/images/logo-bottom.webp"} alt="Winfill Developments">
 </nav>
