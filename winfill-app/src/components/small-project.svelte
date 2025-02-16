@@ -34,14 +34,14 @@
     <p class='text-orange inline mr-2'>Small Projects:</p><p class="inline">{projects.groupName}</p> 
 </div>
 
-<div class="hidden justify-self-end md:flex md:flex-row md:col-span-4 md:text-md lg:col-span-4 lg:text-xl">
+<div class="hidden justify-self-end md:flex md:flex-row md:col-span-4 md:text-md lg:col-span-4 md:text-xl xl:text-2xl">
     <p class='mr-1 '>A little look at what our team designs and builds in our free time...</p> 
 </div>
 
 {#each projects.group as project}
     
-    <div class={'lg:mt-12 lg:col-start-1 col-span-full mb-8 lg:col-span-3' + (project.images ? ' row-span-' + (GetRowSpan(project.images)+1) : '')}>
-        {#if project.name}<h1 class=" text-2xl mb-6">{project.name}</h1>{/if}
+    <div class={'md:text-xl xl:text-2xl lg:mt-12 lg:col-start-1 col-span-full mb-8 lg:col-span-3' + (project.images ? ' row-span-' + (GetRowSpan(project.images)+1) : '')}>
+        {#if project.name}<h1 class="text-xl md:text-2xl xl:text-3xl mb-6">{project.name}</h1>{/if}
         {#if project.designer}<div><h1 class="font-bold inline pr-1">{#if project.inHouse}In House {/if}Design by:</h1><h1 class="inline">{project.designer}</h1></div>{/if}
         {#if project.materials} <div class="mb-6"><h1 class="font-bold inline pr-1">Materials:</h1><h1 class="inline">{project.materials}</h1></div> {/if}
     

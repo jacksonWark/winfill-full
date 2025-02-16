@@ -9,7 +9,7 @@
     let rowSpan: string =  `lg:row-span-${Math.ceil(numImages / imagesPerRow)}`;
 </script>
 
-<div id={id} class={`col-span-full row-span-1 pt-6 lg:col-span-2 lg:col-start-1  ${rowSpan}` }>
-    <h2 class="text-xl mb-4">{name}</h2>
+<div id={id} class={`col-span-full row-span-1 pt-16 md:pt-6 lg:col-span-2 lg:col-start-1  ${rowSpan}` }>
+    <h2 class="text-xl md:text-2xl xl:text-3xl mb-4">{name}</h2>
     <Paragraph text={text} />
 </div>

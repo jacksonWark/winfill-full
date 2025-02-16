@@ -4,7 +4,7 @@
 
 </script>
 
-<div class="md:col-span-4 text-xl md:text-3xl">
+<div class="md:col-span-4 text-xl md:text-2xl xl:text-3xl">
   <p class='text-orange inline'>About:</p> 
 </div>
 
@@ -15,9 +15,9 @@
 
 
 <div class="col-span-full mt-4 lg:mt-8">
-  <h1 class="text-xl md:text-2xl lg:text-3xl ">Background:</h1>
+  <h1 class="text-xl md:text-2xl xl:text-3xl ">Background:</h1>
 </div>
-<div class="col-span-full md:text-lg xl:col-span-5 xl:text-xl">
+<div class="col-span-full xl:col-span-5 md:text-xl xl:text-2xl">
   <Paragraph text={`
     Established in 2020 by two brothers, an Engineer, and an Industrial Designer, 
     Winfill Developments focuses on designing and building unique structures while maintaining a high standard of construction quality. 
@@ -25,7 +25,7 @@
     This focus ensures that each project enhances the surrounding community but, also respects the established architectural and cultural context.
   `} />
 
-  <h1 class="text-xl my-4 md:text-2xl lg:text-3xl lg:my-8">Philosophy:</h1>
+  <h1 class="text-xl my-4 md:text-2xl xl:text-3xl lg:my-8">Philosophy:</h1>
 
   <Paragraph text={`
     At Winfill Developments, our philosophy is rooted in bringing the sophisticated tools and practices typically reserved for commercial construction to all our projects, regardless of scale. 

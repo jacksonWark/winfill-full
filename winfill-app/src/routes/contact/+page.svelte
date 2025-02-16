@@ -54,7 +54,7 @@
 
 
 <div class="col-span-full lg:col-span-2">
-    <div class="w-full text-xl md:text-3xl">
+    <div class="w-full text-xl md:text-2xl xl:text-3xl">
         <p class='text-orange inline mr-2'>Let's Build</p> 
     </div>
 
@@ -73,17 +73,17 @@
 
 
 <div class="flex flex-col col-span-full lg:col-span-4 lg:col-start-4">
-    <div class="mb-6">
-        <p class="text-md md:text-2xl">
+    <div class="mb-24">
+        <p class=" text-xl md:text-2xl xl:text-3xl">
             For project inquiries contact 
         </p>
-        <p class="text-md md:text-2xl">
+        <p class=" text-xl md:text-2xl xl:text-3xl">
             <b>780 803 2405</b>
              or 
              <a href="mailto:info@winfill.ca" class="underline decoration-orange hover:text-orange">info@winfill.ca</a>
         </p>
     </div>
-    <div class="flex justify-self-end text-md mb-16 md:flex-row md:text-2xl">
+    <div class="flex justify-self-end mb-8 md:flex-row text-xl md:text-2xl xl:text-3xl">
         <p class='mr-1 '>Follow The Builds:</p>
         <a href="https://www.instagram.com/winfill_developments/" target="_blank" rel="noopener noreferrer" class="underline decoration-orange hover:text-orange text-right">Instagram</a> 
     </div>
@@ -91,20 +91,20 @@
     <div class="w-full h-full">
         <form class="bg-white grid md:grid-cols-2 gap-6 h-full" id="contactForm" action="https://contact-form-puowesrjpa-uc.a.run.app" on:submit|preventDefault={handleSubmit}>
           <div class="flex flex-row justify-start items-center col-span-2 md:col-span-1">
-            <label class="inline text-sm font-bold mr-2" for="email">Email</label>
+            <label class="inline text-sm font-bold mr-2 md:text-lg xl:text-xl" for="email">Email</label>
             <input class="inline shadow appearance-none w-full py-1 px-2 leading-tight focus:outline-none focus:border" id="email" type="email" name="email">
           </div>
           <div class="flex flex-row justify-start items-center col-span-2 md:col-span-1">
-            <label class="inline text-sm font-bold mr-2 align-middle" for="name">Name</label>
+            <label class="inline text-sm font-bold mr-2 align-middle md:text-lg xl:text-xl" for="name">Name</label>
             <input class="inline shadow appearance-none w-full py-1 px-2 leading-tight focus:outline-none focus:border" id="name" type="text" name="name">
           </div>
           <div class="col-span-2">
-            <label class="block text-sm font-bold mb-2" for="message">Message</label>
+            <label class="block text-sm font-bold mb-2 md:text-lg xl:text-xl" for="message">Message</label>
             <textarea class="shadow appearance-none w-full h-40 py-1 px-2 leading-tight focus:outline-none focus:border lg:h-full" id="message" name="message"></textarea>
           </div>
           <div class="flex justify-end col-span-2 items-center">
             <p class='mr-6' id='status'></p>
-            <input class="bg-orange hover:text-black text-white font-bold py-1 px-2 focus:outline-none focus:shadow-outline" type="submit" value="Submit"/>
+            <input class="bg-orange hover:text-black text-white font-bold py-1 px-2 focus:outline-none focus:shadow-outline text-sm md:text-lg xl:text-xl" type="submit" value="Submit"/>
           </div>
         </form>
     </div>

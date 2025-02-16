@@ -25,12 +25,12 @@
     <p class='text-orange inline mr-2'>Projects:</p><p class="inline">{project.name}</p> 
 </div>
 
-<div class="hidden justify-self-end md:order-2 md:flex md:flex-row md:col-span-4 md:text-md lg:col-span-4 lg:text-2xl">
+<div class="hidden justify-self-end md:order-2 md:flex md:flex-row md:col-span-4 text-xl md:text-2xl xl:text-3xl">
     <p class='mr-1 '>Follow The Builds:</p>
     <a href="https://www.instagram.com/winfill_developments/" target="_blank" rel="noopener noreferrer" class="underline decoration-orange hover:text-orange text-right">Instagram</a> 
 </div>
 
-<div class="col-span-full text-sm md:order-3 md:text-md">
+<div class="col-span-full text-sm md:order-3 md:text-xl xl:text-2xl">
     {#if project.location}<h1 class="font-bold pr-1">{project.location}</h1>{/if}
     {#if project.started}<div><h1 class="font-bold pr-1 inline">Year: {project.started}, {project.status}</h1></div>{/if}
     {#if project.designer}<div><h1 class="font-bold pr-1 inline">{#if project.inHouse}In House {/if}Design by: {project.designer}</h1></div>{/if}

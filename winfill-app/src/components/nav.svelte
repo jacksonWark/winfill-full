@@ -19,7 +19,7 @@
     <div class="flex flex-nowrap flex-col border-1 border-b relative md:flex-row">
         <div class="flex justify-between flex-row">
             <a class="block" href="/">
-                <img class="w-96" src={base+"/images/logo-top.webp"} alt="Winfill Developments">  
+                <img class="w-96 xl:w-[30rem]" src={base+"/images/logo-top.webp"} alt="Winfill Developments">  
             </a>
             <button id='menu-toggle' class="block cursor-pointer right-0 top-0 z-50 md:hidden" on:click={(ev)=>{menuOpen = !menuOpen; ev.stopPropagation()}}>
                 <svg class="fill-current text-black-900" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 20 20">
@@ -31,7 +31,7 @@
         <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
         <!-- svelte-ignore a11y-click-events-have-key-events -->
         <div id="menu" role="navigation" on:click={(ev) => {ev.stopPropagation();}} 
-            class=  {`${menuOpen ? 'flex' : 'hidden'} w-full flex-col mb-5 items-center text-center text-xl 
+            class=  {`${menuOpen ? 'flex' : 'hidden'} w-full flex-col mb-5 items-center text-center text-xl md:text-2xl xl:text-3xl 
                     md:flex md:flex-row md:justify-around md:items-stretch md:grow md:mb-0 z-50`} >
             <div class="flex flex-col p-x-8  md:flex-row md:grow md:justify-around md:px-6 xl:px-16">
                 <div class="flex flex-col-reverse">
@@ -75,5 +75,5 @@
             </div>
         </div>
     </div>
-    <img class="flex-shrink-0 flex-grow-0 w-72" src={base+"/images/logo-bottom.webp"} alt="Winfill Developments">
+    <img class="flex-shrink-0 flex-grow-0 w-72 xl:w-96" src={base+"/images/logo-bottom.webp"} alt="Winfill Developments">
 </nav>
