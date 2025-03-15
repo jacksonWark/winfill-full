@@ -17,9 +17,9 @@
 <!-- NAVIGATION -->
 <nav class="flex flex-col mb-6">
     <div class="flex flex-nowrap flex-col border-1 border-b relative md:flex-row">
-        <div class="flex justify-between flex-row">
-            <a class="block" href="/">
-                <img class="w-96 xl:w-[30rem]" src={base+"/images/logo-top.webp"} alt="Winfill Developments">  
+        <div class="flex justify-between flex-row flex-shrink-0 flex-grow-0">
+            <a class="block flex-shrink-0 flex-grow-0" href="/">
+                <img class="xs:w-36 w-56 lg:w-72 xl:w-96" src={base+"/images/logo-top.webp"} alt="Winfill Developments">  
             </a>
             <button id='menu-toggle' class="block cursor-pointer right-0 top-0 z-50 md:hidden" on:click={(ev)=>{menuOpen = !menuOpen; ev.stopPropagation()}}>
                 <svg class="fill-current text-black-900" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 20 20">
@@ -37,7 +37,7 @@
                 <div class="flex flex-col-reverse">
                     <div id="projects" class="size-auto relative translate-y-1.5">
                         <a class={defStyle + " relative pr-0"} href="/projects">Projects</a>
-                        <button on:click={(ev)=>{subMenuOpen = !subMenuOpen; ev.stopPropagation();}}>
+                        <button class="pt-2 pb-2 pr-2" on:click={(ev)=>{subMenuOpen = !subMenuOpen; ev.stopPropagation();}}>
                             <svg class="w-[12px] h-[12px] fill-black hover:fill-orange" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                             <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                                 {#if (subMenuOpen)}
@@ -75,5 +75,5 @@
             </div>
         </div>
     </div>
-    <img class="flex-shrink-0 flex-grow-0 w-72 xl:w-96" src={base+"/images/logo-bottom.webp"} alt="Winfill Developments">
+    <img class="flex-shrink-0 flex-grow-0 xs:w-36 w-56 lg:w-72 xl:w-96" src={base+"/images/logo-bottom.webp"} alt="Winfill Developments">
 </nav>
