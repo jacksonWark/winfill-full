@@ -5,7 +5,7 @@
     let currentSlide = "slide0";
 </script>
 
-<div class="carousel col-span-full pb-20 w-full h-[90vh] md:h-[70vh] md:order-11 md:pb-0">
+<div class="carousel col-span-full pb-20 w-full h-[80vh] md:h-[70vh] md:order-11 md:pb-0">
     {#each images as image,i}
         {#if currentSlide==("slide"+i)}
             <div id="slide{i}" class="carousel-item relative size-full">

@@ -17,6 +17,6 @@ export function entries() {
 	];
 }
 
-export const prerender = true;
+export const prerender = 'auto';
 //For dynamic generated routes projects/example-project = projects/example
-export const trailingSlash = 'never'; 
+//export const trailingSlash = 'never'; 
