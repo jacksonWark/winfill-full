@@ -5,6 +5,9 @@
     
     //https://us-central1-winfill-373723.cloudfunctions.net/contact-form
     //https://contact-form-puowesrjpa-uc.a.run.app
+    //https://contact-form-29986938493.us-central1.run.app
+
+    const submitURL : string = 'https://contact-form-29986938493.us-central1.run.app';
 
     function startTimer() {
 		setTimeout(() => {
@@ -21,7 +24,8 @@
         let payload = {
             email: (formElements[0] as HTMLInputElement).value, 
             name: (formElements[1] as HTMLInputElement).value, 
-            message: (formElements[2] as HTMLInputElement).value
+            profile: (formElements[2] as HTMLInputElement).checked,
+            message: (formElements[3] as HTMLInputElement).value
         };
 
         let data = new FormData();
@@ -53,26 +57,30 @@
 
 
 
-<div class="col-span-full lg:col-span-2">
-    <div class="w-full text-xl md:text-2xl xl:text-3xl">
+<div class="col-span-full block lg:flex lg:flex-row xl:block xl:col-span-2">
+    <div>
+      <div class="w-full text-xl md:text-2xl xl:text-3xl ">
         <p class='text-orange inline mr-2'>Let's Build</p> 
     </div>
 
-    <Paragraph extraStyles="mb-6 md:mb-0" text={`
+    <Paragraph extraStyles="mb-6  mr-0 lg:mr-20 xl:mr-0 " text={`
         We commence each project with a collaborative introduction.
         Our team will personally visit your site (or assist in finding one) and attentively listen to your ideas, all while sharing our insights and creativity.
         We dedicate time to ideate with you, regardless of the project's scale. 
         Whether it's multi-family developments, custom homes, residential additions, or garages, we have sucessfully constructed them all.
-    `}/>
+    `}/>  
+    </div>
+    
 
-    <ProjectTile alt='contact' source='Husky.webp' route='' imagesPerRow={1} index={0} />
+    <img class="w-full " src="/images/projects/Husky.webp" alt="">
+    
 
 </div>
 
 
 
 
-<div class="flex flex-col col-span-full lg:col-span-4 lg:col-start-4">
+<div class="flex flex-col col-span-full xl:col-span-4 xl:col-start-4">
     <div class="mb-24">
         <p class=" text-xl md:text-2xl xl:text-3xl">
             For project inquiries contact 
@@ -89,7 +97,7 @@
     </div>
 
     <div class="w-full h-full">
-        <form class="bg-white grid md:grid-cols-2 gap-6 h-full" id="contactForm" action="https://contact-form-puowesrjpa-uc.a.run.app" on:submit|preventDefault={handleSubmit}>
+        <form class="bg-white grid md:grid-cols-2 gap-12 " id="contactForm" action="{submitURL}" on:submit|preventDefault={handleSubmit}>
           <div class="flex flex-row justify-start items-center col-span-2 md:col-span-1">
             <label class="inline text-sm font-bold mr-2 md:text-lg xl:text-xl" for="email">Email</label>
             <input class="inline shadow appearance-none w-full py-1 px-2 leading-tight focus:outline-none focus:border" id="email" type="email" name="email">
@@ -99,8 +107,12 @@
             <input class="inline shadow appearance-none w-full py-1 px-2 leading-tight focus:outline-none focus:border" id="name" type="text" name="name">
           </div>
           <div class="col-span-2">
+            <label class="inline text-sm font-bold mr-2 align-middle md:text-lg xl:text-xl" for="profile">Send company profile?</label>
+            <input type="checkbox" id="profile" name="profile" value="true">
+          </div>
+          <div class="col-span-2">
             <label class="block text-sm font-bold mb-2 md:text-lg xl:text-xl" for="message">Message</label>
-            <textarea class="shadow appearance-none w-full h-40 py-1 px-2 leading-tight focus:outline-none focus:border lg:h-full" id="message" name="message"></textarea>
+            <textarea class="shadow appearance-none w-full h-40 py-1 px-2 leading-tight focus:outline-none focus:border lg:h-50" id="message" name="message"></textarea>
           </div>
           <div class="flex justify-end col-span-2 items-center">
             <p class='mr-6' id='status'></p>

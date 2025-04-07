@@ -1,5 +1,6 @@
 source_new/
 source_personal/
+current/
 .vscode/
 node_modules/
 key.json

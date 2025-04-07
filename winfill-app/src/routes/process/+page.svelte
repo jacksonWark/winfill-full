@@ -3,11 +3,35 @@
   import Carousel from "../../components/carousel.svelte";
 
   let carouselImages = [
-    {path: "/images/process/assess.webp", alt: "assess"},
-    {path: "/images/process/design.webp", alt: "assess"},
+    {path: "/images/process/BuildGallery-01.webp", alt: "assess"},
+    {path: "/images/process/BuildGallery-02.webp", alt: "assess"},
     {path: "/images/process/build-1.webp", alt: "assess"},
     {path: "/images/process/build-2.webp", alt: "assess"},
-    {path: "/images/process/build-3.webp", alt: "assess"}
+    {path: "/images/process/build-3.webp", alt: "assess"},
+    {path: "/images/process/BuildGallery-06.webp", alt: "assess"},
+    {path: "/images/process/BuildGallery-07.webp", alt: "assess"},
+    {path: "/images/process/BuildGallery-08.webp", alt: "assess"},
+    {path: "/images/process/BuildGallery-09.webp", alt: "assess"},
+    {path: "/images/process/BuildGallery-10.webp", alt: "assess"},
+    {path: "/images/process/BuildGallery-11.webp", alt: "assess"},
+    {path: "/images/process/BuildGallery-12.webp", alt: "assess"},
+    {path: "/images/process/BuildGallery-13.webp", alt: "assess"},
+    {path: "/images/process/BuildGallery-14.webp", alt: "assess"},
+    {path: "/images/process/BuildGallery-15.webp", alt: "assess"},
+    {path: "/images/process/BuildGallery-16.webp", alt: "assess"},
+    {path: "/images/process/BuildGallery-17.webp", alt: "assess"},
+    {path: "/images/process/BuildGallery-18.webp", alt: "assess"},
+    {path: "/images/process/BuildGallery-19.webp", alt: "assess"},
+    {path: "/images/process/BuildGallery-20.webp", alt: "assess"},
+    {path: "/images/process/BuildGallery-21.webp", alt: "assess"},
+    {path: "/images/process/BuildGallery-22.webp", alt: "assess"},
+    {path: "/images/process/BuildGallery-23.webp", alt: "assess"},
+    {path: "/images/process/BuildGallery-24.webp", alt: "assess"},
+    {path: "/images/process/BuildGallery-25.webp", alt: "assess"},
+    {path: "/images/process/BuildGallery-26.webp", alt: "assess"},
+    {path: "/images/process/BuildGallery-27.webp", alt: "assess"},
+    {path: "/images/process/BuildGallery-28.webp", alt: "assess"},
+    {path: "/images/process/BuildGallery-29.webp", alt: "assess"}
   ]
 </script>
 
@@ -35,7 +59,7 @@
   `}/>
 </div>
 
-<div class="col-span-full xl:col-span-3 xl:col-start-8">
+<div class="col-span-full md:pt-16 xl:col-span-3 xl:col-start-8">
   <img src="/images/process/assess.webp" alt="winfill developments">
 </div> 
 
@@ -57,13 +81,13 @@
     Winfill Developments adheres to a systematic design process that involves multiple phases, ensuring that the client can make well-timed and well-informed decisions in an orderly fashion. 
     We will provide several deliverables for your assessment and endorsement before moving on to the subsequent phase.
   `} extraStyles={"my-4 lg:mb-8"} />
-
+  
   <Paragraph text={`
     If you would like to learn more about our design process and view previous design work please download our full: <a href="/contact" class="underline decoration-orange text-orange">Corporate Profile</a>
   `} extraStyles={"my-4 lg:mb-8"} />
 </div>
 
-<div class="col-span-full md:order-5 xl:col-span-3 xl:col-start-1">
+<div class="col-span-full md:pt-20 md:order-5 xl:col-span-3 xl:col-start-1">
   <img src="/images/process/design.webp" alt="winfill developments">
 </div> 
 
@@ -75,14 +99,14 @@
     Outlined below are some of our techniques.
   `} extraStyles={"my-4 lg:my-8"} />
 
-  <h3 class="font-bold">Pre Construction & Value Engineering:</h3>
+  <h3 class="font-bold xl:text-2xl">Pre Construction & Value Engineering:</h3>
   <Paragraph text={`
     Prior to construction, Winfill offers preconstruction services. 
     We will complete a comprehensive review of your project where each scope of work is reviewed by our team, we will consider our previous knowledge and experience, current market conditions, historical data, subcontractor input, and more. 
     This process is coupled with proactive value engineering exercises which will provide the owner with additional opportunities to develop solutions to decrease the cost and risk of the project.
   `} extraStyles={"mb-4 lg:mb-8"} />
   
-  <h3 class="font-bold">Project planning & Scheduling:</h3>
+  <h3 class="font-bold xl:text-2xl">Project planning & Scheduling:</h3>
   <Paragraph text={`
     Project planning is the greatest tool to ensure that the project is completed on budget and on time. We begin our scheduling efforts in our pre-construction sessions with all project stakeholders. 
     Within these partnering sessions, our team will provide leadership and expertise in the planning of the initial site investigations, mobilization strategies, document reviews, development of project plans, site logistics reviews, mobilization dates, and more. 
@@ -97,21 +121,21 @@
     This allows us to track committed task status, and link tracked progress to our master schedule.
   `} extraStyles={"mb-4 lg:mb-8"} />
 
-  <h3 class="font-bold">Monthly Reporting:</h3>
+  <h3 class="font-bold xl:text-2xl">Monthly Reporting:</h3>
   <Paragraph text={`
     Winfill provides monthly reporting on the health of projects once underway. 
     This reporting template may be customized to what is most useful to all parties to capture and communicate project information and outcomes. 
     Our standard template features the following key elements:
   `} extraStyles={"mb-4 lg:mb-8"} />
 
-  <ul class="list-disc list-outside ms-8 mb-4 lg:mb-8">
+  <ul class="list-disc list-outside ms-8 mb-4 lg:mb-8 xl:text-2xl">
     <li>Progress summary with progress photos</li>
     <li>Upcoming work plans</li>
     <li>Quality Concerns/Corrections</li>
     <li>Budget update, budget adjustment summaries, change order summaries and cash flow projections</li>
   </ul>
 
-  <h3 class="font-bold">Quality Control:</h3>
+  <h3 class="font-bold xl:text-2xl">Quality Control:</h3>
   <Paragraph text={`
     Winfill follows a “Quality First” methodology which is the process of building it right the first time. 
     This process goes beyond reporting and repairing deficiencies and focuses on initially preventing deficiencies. 
@@ -125,7 +149,7 @@
     In the event that deficiencies are noted, they are tracked in our digital deficiency log and assigned to the responsible contractor.
   `} extraStyles={"mb-4 lg:mb-8"} />
 
-  <h3 class="font-bold">Project Turn Over:</h3>
+  <h3 class="font-bold xl:text-2xl">Project Turn Over:</h3>
   <Paragraph text={`
     Winfill takes pride in the finishing touches and the smallest details. 
     We anticipate where our clients’ eyes will be drawn and make sure what they see is the perfect realization of their original vision. 
@@ -138,10 +162,10 @@
 
   <Paragraph text={`
     If you would like to learn more about our design process and view previous design work please download our full: <a href="/contact" class="underline decoration-orange text-orange">Corporate Profile</a>
-  `} extraStyles={"mb-4 lg:mb-8"} />  
-</div>
+  `} extraStyles={"mb-4 lg:mb-8"} /> 
+</div> 
 
-<div class="col-span-full md:order-8 xl:col-span-3 xl:col-start-8">
+<div class="col-span-full md:order-8 md:pt-16 xl:col-span-3 xl:col-start-8">
   <img src="/images/process/build-1.webp" alt="winfill developments">
 </div> 
 
@@ -153,5 +177,10 @@
   <img src="/images/process/build-3.webp" alt="winfill developments">
 </div> 
 
+<div class="col-span-full mb-6 md:order-10 ">
 
-<Carousel images={carouselImages} />
+  <h1 class="text-xl mb-10 md:text-2xl lg:text-3xl translate-y-20 md:translate-y-10 ">Build Gallery:</h1>
+
+  <Carousel images={carouselImages} />
+
+</div>

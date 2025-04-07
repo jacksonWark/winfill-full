@@ -10,7 +10,7 @@
     `
 </script>
 
-<div class="col-span-1 md:col-span-10 lg:col-start-2 lg:col-span-8 relative ">
+<div class="col-span-1 md:col-span-10 lg:col-start-2 lg:col-span-8 relative">
 
     
 

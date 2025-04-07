@@ -257,9 +257,9 @@ export const projects: MixedProjects = [
     { //Riverdale Residence
         name: "Riverdale Residence",
         category: "Homes",
-        location: "Gold Bar, Edmonton, AB",
+        location: "Riverdale, Edmonton, AB",
         status: "Completed",
-        designer: "Brenden Wiun & Kurtis Wiun",
+        designer: "Kurtis Wiun",
         inHouse: true,
         route: "riverdale-residence",
         conceptImage: "scan.webp",

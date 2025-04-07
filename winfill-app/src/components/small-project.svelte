@@ -60,7 +60,7 @@
     </div>
 
     {#if project.images}
-        <div class={"col-span-full gap-y-12 lg:mt-12 grid lg:grid-cols-subgrid lg:gap-x-6 lg:col-span-7" + (project.images ? ' lg:row-span-' + GetRowSpan(project.images) : '')}>
+        <div class={"col-span-full gap-y-2 md:gap-y-6 lg:mt-12 grid lg:grid-cols-subgrid lg:gap-x-6 lg:col-span-7" + (project.images ? ' lg:row-span-' + GetRowSpan(project.images) : '')}>
         {#each project.images as image, i}
             {#if IsPathList(image.path)}
                 <div class={`flex flex-row pl-10 mb-6 md:mb-0 md:col-span-full lg:col-span-${image.width} lg:col-start-${MapSide(image.side, image.start)} lg:row-span-${image.height}`}>
@@ -70,7 +70,7 @@
                 </div>
             {:else}
             <div class={`mb-6 md:mb-0 md:col-span-full lg:col-span-${image.width} lg:col-start-${MapSide(image.side, image.start)} lg:row-span-${image.height}`}>
-                <img draggable="false" class="select-none object-cover" src="{imageFolder+image.path}" alt="{project.name}">
+                <img draggable="false" class="select-none object-cover w-full" src="{imageFolder+image.path}" alt="{project.name}">
             </div>
             {/if}
         {/each}

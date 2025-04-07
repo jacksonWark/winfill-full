@@ -5,10 +5,10 @@
     let currentSlide = "slide0";
 </script>
 
-<div class="carousel col-span-full pb-20 w-full h-[80vh] md:h-[70vh] md:order-11 md:pb-0">
+<div class="carousel col-span-full pb-20 w-full h-[80vh]  md:order-11 md:pb-0">
     {#each images as image,i}
         {#if currentSlide==("slide"+i)}
-            <div id="slide{i}" class="carousel-item relative size-full">
+            <div id="slide{i}" class="carousel-item relative size-full pt-14 md:pt-10">
                 <div class="h-full bg-cover" style="{`background-image:url('${image.path}')`}">
                     <div class="h-full bg-gray-600 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20">
                         <img src={image.path} alt={image.alt} class="size-full p-0 md:pl-20 md:pr-20 object-contain" />

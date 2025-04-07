@@ -30,18 +30,18 @@
     <a href="https://www.instagram.com/winfill_developments/" target="_blank" rel="noopener noreferrer" class="underline decoration-orange hover:text-orange text-right">Instagram</a> 
 </div>
 
-<div class="col-span-full text-sm md:order-3 md:text-xl xl:text-2xl">
+<div class="col-span-full text-sm md:order-3 md:text-xl xl:text-2xl lg:col-span-7">
     {#if project.location}<h1 class="font-bold pr-1">{project.location}</h1>{/if}
     {#if project.started}<div><h1 class="font-bold pr-1 inline">Year: {project.started}, {project.status}</h1></div>{/if}
     {#if project.designer}<div><h1 class="font-bold pr-1 inline">{#if project.inHouse}In House {/if}Design by: {project.designer}</h1></div>{/if}
 </div>
 
 {#if project.conceptImage}
-<div class="my-4 md:my-0 md:order-4 md:col-start-2 md:col-span-8 lg:order-5 lg:col-start-8 lg:col-span-3">
-    <img src={imageFolder+project.conceptImage} alt={project.name}>
+<div class="my-4 md:my-0 md:order-4  md:col-start-2 md:col-span-8 lg:order-5 lg:col-start-8 lg:col-span-3 lg:row-span-2 lg:row-start-2 lg:flex">
+    <img class=" object-contain" src={imageFolder+project.conceptImage} alt={project.name}>
 </div>
     {#if project.text}
-        <div class="mb-8 md:order-5 md:col-start-1 md:col-span-10 lg:order-4 lg:columns-2 lg:col-span-7">
+        <div class="mb-8 md:order-5 md:col-start-1 md:col-span-10 lg:order-4 lg:columns-2 lg:gap-12 lg:col-span-7">
             {#each project.text as paragraph, i}
                 {#if !IsBulletList(paragraph)}
                     <Paragraph extraStyles={"mb-4"} text={paragraph} title={i == 0 ? 'Description: ' : ''}/>

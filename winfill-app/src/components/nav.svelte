@@ -22,7 +22,7 @@
                 <img class="xs:w-36 w-56 lg:w-72 xl:w-96" src={base+"/images/logo-top.webp"} alt="Winfill Developments">  
             </a>
             <button id='menu-toggle' class="block cursor-pointer right-0 top-0 z-50 md:hidden" on:click={(ev)=>{menuOpen = !menuOpen; ev.stopPropagation()}}>
-                <svg class="fill-current text-black-900" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 20 20">
+                <svg class="fill-current text-orange fill-orange" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 20 20">
                     <title>menu</title> <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
                 </svg>
             </button>
@@ -31,7 +31,7 @@
         <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
         <!-- svelte-ignore a11y-click-events-have-key-events -->
         <div id="menu" role="navigation" on:click={(ev) => {ev.stopPropagation();}} 
-            class=  {`${menuOpen ? 'flex' : 'hidden'} w-full flex-col mb-5 items-center text-center text-xl md:text-2xl xl:text-3xl 
+            class=  {`${menuOpen ? 'flex' : 'hidden'} w-full flex-col mb-5 items-end justify-end text-right text-xl md:text-2xl xl:text-3xl 
                     md:flex md:flex-row md:justify-around md:items-stretch md:grow md:mb-0 z-50`} >
             <div class="flex flex-col p-x-8  md:flex-row md:grow md:justify-around md:px-6 xl:px-16">
                 <div class="flex flex-col-reverse">
@@ -47,11 +47,12 @@
                                 {/if}
                             </svg>
                         </button>
-                        <div class={`${subMenuOpen ? "flex opacity-100" : "opacity-0 hidden"} bg-white w-40 top-full origin-top flex-col border-y md:border-none md:pl-2.5 md:translate-y-1 md:absolute md:text-left`}>
-                            <a class="w-full font-bold hover:text-orange" href="/projects#homes">Homes</a>
-                            <a class="w-full font-bold hover:text-orange" href="/projects#multi-family">Multi-Family</a>
-                            <a class="w-full font-bold hover:text-orange" href="/projects#small-projects">Small Projects</a>
-                            <a class="w-full font-bold hover:text-orange" href="/projects#for-sale">For Sale</a>
+                        <div class={`${subMenuOpen ? "flex opacity-100" : "opacity-0 hidden"} bg-white w-36 md:w-56 top-full origin-top flex-col border-y md:border-none md:pl-2.5 md:translate-y-1 md:absolute md:text-left`}>
+                            <a class="w-full font-normal hover:text-orange" href="/projects#homes">Homes</a>
+                            <a class="w-full font-normal hover:text-orange" href="/projects#multi-family">Multi-Family</a>
+                            <a class="w-full font-normal hover:text-orange" href="/projects#renovations">Renovations</a>
+                            <a class="w-full font-normal hover:text-orange" href="/projects#small-projects">Small Projects</a>
+                            <a class="w-full font-normal hover:text-orange" href="/projects#for-sale">For Sale</a>
                         </div>
                     </div>
                 </div>
